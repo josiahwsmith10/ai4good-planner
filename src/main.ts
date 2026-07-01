@@ -15,10 +15,16 @@ import './styles/board.css';
 import type { Manifest, SummitData } from '../shared/schema';
 import { loadManifest, loadYear } from './data/loadData';
 import { buildDataset } from './data/normalize';
-import { initStore, getState, setState, emptyFilters, type AppState } from './state/store';
+import {
+  initStore,
+  setState,
+  emptyFilters,
+  DEFAULT_PX_PER_MIN,
+  type AppState,
+} from './state/store';
 import { decodeHash, hasHash } from './state/urlState';
-import { loadMine } from './state/persistence';
 import { nowInZurich } from './lib/clock';
+import { readThemePref } from './lib/theme';
 import { mountApp, setDataset } from './app';
 
 let manifest: Manifest;
@@ -30,19 +36,17 @@ function defaultDay(days: string[]): string {
 
 function initialState(data: SummitData): AppState {
   const meta = data.metadata;
-  const dataset = buildDataset(data);
   const base: AppState = {
     year: meta.year,
     day: defaultDay(meta.days),
     filters: emptyFilters(),
-    mine: loadMine(meta.year),
-    mineMode: 'off',
-    pxPerMin: 1.3,
+    pxPerMin: DEFAULT_PX_PER_MIN,
+    colWidths: {},
+    themePref: readThemePref(),
   };
-  // A shared link (hash) wins over local defaults so it reproduces exactly.
+  // A shared link (hash) wins over local defaults so it reproduces the same filtered view.
   if (hasHash()) {
     const patch = decodeHash(location.hash, {
-      sortedIds: dataset.sortedIds,
       validYears: manifest.years.map((y) => y.year),
       validDays: meta.days,
       validLocations: meta.locations,
@@ -59,13 +63,7 @@ async function switchYear(year: number): Promise<void> {
   if (!entry) return;
   const data = await loadYear(entry.file);
   setDataset(buildDataset(data));
-  setState({
-    year,
-    day: defaultDay(data.metadata.days),
-    filters: emptyFilters(),
-    mine: loadMine(year),
-    mineMode: 'off',
-  });
+  setState({ year, day: defaultDay(data.metadata.days), filters: emptyFilters() });
 }
 
 function renderError(app: HTMLElement, err: unknown): void {

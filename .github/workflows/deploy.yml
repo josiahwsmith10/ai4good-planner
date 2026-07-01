@@ -21,26 +21,41 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  # Quality gates — run on every push and PR (the whole point of the pipeline).
+  checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
           cache: npm
-
       - run: npm ci
-
-      # Fast correctness gate before we ship.
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run format:check
       - run: npm test
+
+  build:
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
 
       # Vite build. base '/ai4good-planner/' is set in vite.config.ts for production.
       # Committed public/data/*.json is copied into dist/ as a static asset.
       - run: npm run build
 
+      # enablement: true lets the workflow turn Pages on itself (source = GitHub Actions),
+      # so a fresh repo doesn't 404 waiting for the setting to be toggled by hand.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

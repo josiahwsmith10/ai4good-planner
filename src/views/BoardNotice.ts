@@ -9,8 +9,8 @@ export function BoardNotice(meta: Metadata): TemplateResult {
     <div class="notice ${stale ? 'notice--warn' : ''}" role="note">
       <span class="notice__tag eyebrow">Unofficial</span>
       <span class="notice__body">
-        Snapshot as of <span class="mono">${formatStamp(meta.fetchedAt)}</span>. Not affiliated
-        with the ITU — verify the
+        Snapshot as of <span class="mono">${formatStamp(meta.fetchedAt)}</span>. Not affiliated with
+        the ITU — verify the
         <a href=${meta.sourceUrl} target="_blank" rel="noopener">official programme ↗</a>.
       </span>
       ${stale ? html`<span class="notice__flag eyebrow">data may be stale</span>` : ''}

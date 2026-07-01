@@ -96,7 +96,9 @@ async function main(): Promise<void> {
   const html = await fetchHtml(url);
 
   const { events: rawEvents, parseErrors } = parseEvents(html);
-  console.log(`[scrape] ${rawEvents.length} .event nodes · ${parseErrors.length} data-export parse errors`);
+  console.log(
+    `[scrape] ${rawEvents.length} .event nodes · ${parseErrors.length} data-export parse errors`,
+  );
 
   const normalized = rawEvents
     .map(normalizeEvent)

@@ -9,7 +9,8 @@ export interface EnvelopeMeta {
   timezone: string;
 }
 
-const uniqSorted = (arr: string[]): string[] => [...new Set(arr)].sort((a, b) => a.localeCompare(b));
+const uniqSorted = (arr: string[]): string[] =>
+  [...new Set(arr)].sort((a, b) => a.localeCompare(b));
 
 /**
  * Assemble the on-disk envelope: deterministic event ordering (clean git diffs) and filter

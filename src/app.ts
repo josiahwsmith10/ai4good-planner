@@ -7,13 +7,15 @@ import {
   subscribe,
   emptyFilters,
   toggleInSet,
-  type MineMode,
+  COL_WIDTH_MAX,
+  COL_WIDTH_MIN,
+  DEFAULT_COL_WIDTH,
 } from './state/store';
 import { visibleSegments } from './selectors/filterEvents';
 import { layoutGrid } from './selectors/layoutGrid';
 import { encodeHash } from './state/urlState';
-import { saveMine } from './state/persistence';
 import { startClock, nowInZurich, type ZurichNow } from './lib/clock';
+import { applyTheme, nextThemePref, onSystemThemeChange, saveThemePref } from './lib/theme';
 import { Masthead } from './views/Masthead';
 import { BoardNotice } from './views/BoardNotice';
 import { DayTabs } from './views/DayTabs';
@@ -22,6 +24,7 @@ import { YearSwitcher } from './views/YearSwitcher';
 import { GridView } from './views/grid/GridView';
 import { AgendaView } from './views/AgendaView';
 import { EventDetail } from './views/EventDetail';
+import { ThemeToggle } from './views/ThemeToggle';
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 
@@ -31,6 +34,8 @@ let manifest: Manifest;
 let now: ZurichNow = nowInZurich();
 let selectedId: string | null = null;
 let onYearChange: (year: number) => void = () => {};
+// Ordered keys of the currently-rendered board columns — used by the live column resize.
+let liveColKeys: string[] = [];
 
 // View: auto (agenda on phones, board otherwise) unless the user overrides.
 const narrow = window.matchMedia('(max-width: 700px)');
@@ -53,7 +58,7 @@ let urlTimer = 0;
 function syncUrl(): void {
   clearTimeout(urlTimer);
   urlTimer = window.setTimeout(() => {
-    const hash = encodeHash(getState(), dataset.sortedIds);
+    const hash = encodeHash(getState());
     const url = hash ? `#${hash}` : `${location.pathname}${location.search}`;
     history.replaceState(null, '', url);
   }, 250);
@@ -80,7 +85,9 @@ const handlers = {
     syncUrl();
   },
   toggleInvitation: () => {
-    setState((s) => ({ filters: { ...s.filters, hideInvitationOnly: !s.filters.hideInvitationOnly } }));
+    setState((s) => ({
+      filters: { ...s.filters, hideInvitationOnly: !s.filters.hideInvitationOnly },
+    }));
     syncUrl();
   },
   setSearch: (v: string) => {
@@ -91,22 +98,35 @@ const handlers = {
     setState({ filters: emptyFilters() });
     syncUrl();
   },
-  setMineMode: (m: MineMode) => {
-    setState({ mineMode: m });
-    syncUrl();
-  },
   zoom: (delta: number) => {
     setState((s) => ({ pxPerMin: clamp(s.pxPerMin * delta, 0.5, 4) }));
   },
-  toggleMine: (id: string) => {
-    setState((s) => {
-      const mine = new Set(s.mine);
-      if (mine.has(id)) mine.delete(id);
-      else mine.add(id);
-      return { mine };
-    });
-    saveMine(getState().year, getState().mine);
-    syncUrl();
+  // Excel-style column resize: drag the stage header's right edge. During the drag we set
+  // the grid template directly on the DOM (blocks are %-width, so they scale for free), then
+  // commit the final width to state on release for one clean re-render.
+  startResize: (key: string, e: PointerEvent) => {
+    e.preventDefault();
+    const startX = e.clientX;
+    const startW = getState().colWidths[key] ?? DEFAULT_COL_WIDTH;
+    const boardInner = root.querySelector<HTMLElement>('.board__inner');
+    let liveW = startW;
+    const template = (w: number) =>
+      `var(--ruler-w) ${liveColKeys
+        .map((k) => `${k === key ? w : (getState().colWidths[k] ?? DEFAULT_COL_WIDTH)}px`)
+        .join(' ')}`;
+    const onMove = (ev: PointerEvent) => {
+      liveW = clamp(startW + (ev.clientX - startX), COL_WIDTH_MIN, COL_WIDTH_MAX);
+      boardInner?.style.setProperty('--grid-cols', template(liveW));
+    };
+    const onUp = () => {
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+      document.body.classList.remove('is-col-resizing');
+      setState((s) => ({ colWidths: { ...s.colWidths, [key]: liveW } }));
+    };
+    document.body.classList.add('is-col-resizing');
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
   },
   open: (id: string) => {
     selectedId = id;
@@ -119,12 +139,18 @@ const handlers = {
   share: async () => {
     try {
       await navigator.clipboard.writeText(location.href);
-      toast('Share link copied');
+      toast('View link copied');
     } catch {
       toast('Copy failed — select the address bar');
     }
   },
   selectYear: (y: number) => onYearChange(y),
+  cycleTheme: () => {
+    const pref = nextThemePref(getState().themePref);
+    saveThemePref(pref);
+    applyTheme(pref);
+    setState({ themePref: pref });
+  },
   toggleView: () => {
     viewOverride = effectiveView() === 'board' ? 'agenda' : 'board';
     scheduleRender();
@@ -138,18 +164,23 @@ function rerender(): void {
   const state = getState();
   const segs = visibleSegments(dataset, state);
   const view = effectiveView();
-  const selected = selectedId ? dataset.byId.get(selectedId) ?? null : null;
+  const selected = selectedId ? (dataset.byId.get(selectedId) ?? null) : null;
   const enter = firstPaint;
   firstPaint = false;
 
-  const body =
-    view === 'agenda'
-      ? AgendaView(segs, state, handlers)
-      : GridView(layoutGrid(segs, dataset.locations, state.pxPerMin), state, now, handlers);
+  let body;
+  if (view === 'agenda') {
+    liveColKeys = [];
+    body = AgendaView(segs, handlers);
+  } else {
+    const layout = layoutGrid(segs, dataset.locations, state.pxPerMin);
+    liveColKeys = layout.columns.map((c) => c.key);
+    body = GridView(layout, state, now, handlers);
+  }
 
   render(
     html`
-      ${Masthead(state, now, state.mine.size)} ${BoardNotice(dataset.data.metadata)}
+      ${Masthead(state, now)} ${BoardNotice(dataset.data.metadata)}
       <div class="controls">
         ${YearSwitcher(manifest, state.year, handlers.selectYear)}
         ${DayTabs(dataset.data.metadata.days, state.day, handlers.selectDay)}
@@ -157,15 +188,17 @@ function rerender(): void {
         <button class="btn btn--ghost viewtoggle" @click=${handlers.toggleView}>
           ${view === 'board' ? '☰ Agenda' : '▦ Board'}
         </button>
+        ${ThemeToggle(state.themePref, handlers)}
       </div>
       <main class="board-wrap ${enter ? 'is-enter' : ''}">${body}</main>
-      ${selected
-        ? EventDetail(selected, state.mine.has(selected.id), {
-            toggleMine: handlers.toggleMine,
-            closeDetail: handlers.closeDetail,
-            programmeUrl: handlers.programmeUrl,
-          })
-        : nothing}
+      ${
+        selected
+          ? EventDetail(selected, {
+              closeDetail: handlers.closeDetail,
+              programmeUrl: handlers.programmeUrl,
+            })
+          : nothing
+      }
       <div id="toast" class="toast" role="status" aria-live="polite"></div>
     `,
     root,
@@ -187,6 +220,9 @@ export function mountApp(
   dataset = ds;
   manifest = mf;
   onYearChange = opts.onYearChange;
+  applyTheme(getState().themePref);
+  // While the preference is "system", follow OS light/dark changes live.
+  onSystemThemeChange(() => applyTheme(getState().themePref));
   subscribe(() => scheduleRender());
   startClock((n) => {
     now = n;

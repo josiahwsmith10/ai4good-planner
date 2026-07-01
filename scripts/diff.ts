@@ -6,8 +6,18 @@ import { SummitDataSchema, type SummitData, type SummitEvent } from '../shared/s
 // outputs (changed / large / removed_vocab) when run in CI.
 
 const COMPARE_FIELDS: (keyof SummitEvent)[] = [
-  'title', 'date', 'startTime', 'endTime', 'location', 'eventType',
-  'topics', 'speakers', 'invitationOnly', 'url', 'endDate', 'isMultiDay',
+  'title',
+  'date',
+  'startTime',
+  'endTime',
+  'location',
+  'eventType',
+  'topics',
+  'speakers',
+  'invitationOnly',
+  'url',
+  'endDate',
+  'isMultiDay',
 ];
 const LARGE_DIFF_RATIO = 0.4;
 
@@ -94,7 +104,10 @@ function main(): void {
   if (!isChanged) {
     lines.push('No semantic changes (ignoring the snapshot timestamp).');
   } else {
-    if (isLarge) lines.push(`> ⚠️ **LARGE DIFF** — ${(ratio * 100).toFixed(0)}% of events changed. Review carefully.`);
+    if (isLarge)
+      lines.push(
+        `> ⚠️ **LARGE DIFF** — ${(ratio * 100).toFixed(0)}% of events changed. Review carefully.`,
+      );
     lines.push(`**${added.length} added · ${removed.length} removed · ${changed.length} changed**`);
     lines.push('');
     if (vocab.changes.length) {
@@ -104,13 +117,21 @@ function main(): void {
     }
     if (added.length) {
       lines.push('#### Added');
-      lines.push(...added.slice(0, 40).map((e) => `- ${e.date} ${e.startTime} · ${e.location ?? '—'} · ${e.title}`));
+      lines.push(
+        ...added
+          .slice(0, 40)
+          .map((e) => `- ${e.date} ${e.startTime} · ${e.location ?? '—'} · ${e.title}`),
+      );
       if (added.length > 40) lines.push(`- …and ${added.length - 40} more`);
       lines.push('');
     }
     if (removed.length) {
       lines.push('#### Removed');
-      lines.push(...removed.slice(0, 40).map((e) => `- ${e.date} ${e.startTime} · ${e.location ?? '—'} · ${e.title}`));
+      lines.push(
+        ...removed
+          .slice(0, 40)
+          .map((e) => `- ${e.date} ${e.startTime} · ${e.location ?? '—'} · ${e.title}`),
+      );
       if (removed.length > 40) lines.push(`- …and ${removed.length - 40} more`);
       lines.push('');
     }
@@ -119,7 +140,9 @@ function main(): void {
       for (const c of changed.slice(0, 40)) {
         lines.push(`- **${c.e.title}**`);
         for (const f of c.fields) {
-          lines.push(`  - ${f}: \`${fmt((c.prev as Record<string, unknown>)[f])}\` → \`${fmt((c.e as Record<string, unknown>)[f])}\``);
+          lines.push(
+            `  - ${f}: \`${fmt((c.prev as Record<string, unknown>)[f])}\` → \`${fmt((c.e as Record<string, unknown>)[f])}\``,
+          );
         }
       }
       if (changed.length > 40) lines.push(`- …and ${changed.length - 40} more`);
@@ -132,7 +155,10 @@ function main(): void {
   if (process.env.GITHUB_OUTPUT) {
     appendFileSync(process.env.GITHUB_OUTPUT, `changed=${isChanged ? 'true' : 'false'}\n`);
     appendFileSync(process.env.GITHUB_OUTPUT, `large=${isLarge ? 'true' : 'false'}\n`);
-    appendFileSync(process.env.GITHUB_OUTPUT, `removed_vocab=${vocab.removed ? 'true' : 'false'}\n`);
+    appendFileSync(
+      process.env.GITHUB_OUTPUT,
+      `removed_vocab=${vocab.removed ? 'true' : 'false'}\n`,
+    );
   }
   if (process.env.GITHUB_STEP_SUMMARY) {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY, `${summary}\n`);

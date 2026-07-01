@@ -13,8 +13,6 @@ export interface Dataset {
   data: SummitData;
   events: SummitEvent[];
   byId: Map<string, SummitEvent>;
-  /** Deterministic id order — the index space for the shareable "mine" bitset. */
-  sortedIds: string[];
   segmentsByDay: Map<string, DaySegment[]>;
   locations: string[];
   hasNoStage: boolean;
@@ -42,9 +40,6 @@ function daysBetween(start: string, end: string): string[] {
 export function buildDataset(data: SummitData): Dataset {
   const events = data.events;
   const byId = new Map(events.map((e) => [e.id, e]));
-  const sortedIds = events
-    .map((e) => e.id)
-    .sort((a, b) => Number(a) - Number(b) || a.localeCompare(b));
 
   const segmentsByDay = new Map<string, DaySegment[]>();
   for (const day of data.metadata.days) segmentsByDay.set(day, []);
@@ -54,7 +49,8 @@ export function buildDataset(data: SummitData): Dataset {
     if (!e.location) hasNoStage = true;
     const startMin = toMinutes(e.startTime);
     let endMin = toMinutes(e.endTime);
-    if (endMin < startMin) endMin = 24 * 60; // crosses midnight → clamp to end of day
+    if (endMin < startMin)
+      endMin = 24 * 60; // crosses midnight → clamp to end of day
     else if (endMin === startMin) endMin = Math.min(24 * 60, startMin + 30); // min slot
 
     const days = e.isMultiDay && e.endDate ? daysBetween(e.date, e.endDate) : [e.date];
@@ -64,5 +60,12 @@ export function buildDataset(data: SummitData): Dataset {
     }
   }
 
-  return { data, events, byId, sortedIds, segmentsByDay, locations: data.metadata.locations, hasNoStage };
+  return {
+    data,
+    events,
+    byId,
+    segmentsByDay,
+    locations: data.metadata.locations,
+    hasNoStage,
+  };
 }

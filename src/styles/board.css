@@ -36,6 +36,7 @@
   font-size: 11px;
 }
 .stagehead {
+  position: relative;
   padding: var(--sp-2);
   border-left: 1px solid var(--rule);
   display: flex;
@@ -54,6 +55,35 @@
 .stagehead__count {
   font-size: 10px;
   color: var(--dim);
+}
+/* Excel-style resize grip on the column's right edge. */
+.stagehead__resize {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  width: 9px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 10;
+  touch-action: none;
+}
+.stagehead__resize::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  right: 3px;
+  width: 2px;
+  background: transparent;
+  transition: background var(--dur);
+}
+.stagehead__resize:hover::after,
+body.is-col-resizing .stagehead__resize::after {
+  background: var(--lac);
+}
+body.is-col-resizing {
+  cursor: col-resize;
+  user-select: none;
 }
 
 /* --- plot (ruler + columns + overlay lines) --- */
@@ -124,7 +154,9 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 2;
-  transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition:
+    box-shadow var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
 }
 .ev:hover {
   border-color: var(--dim);
@@ -149,39 +181,6 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.ev__star {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  background: transparent;
-  border: none;
-  color: var(--dim);
-  cursor: pointer;
-  font-size: 13px;
-  line-height: 1;
-  padding: 2px;
-  opacity: 0;
-  transition: opacity var(--dur);
-}
-.ev:hover .ev__star,
-.ev:focus-within .ev__star,
-.ev__star.is-on {
-  opacity: 1;
-}
-.ev__star.is-on {
-  color: var(--lac);
-}
-.ev--mine {
-  border-color: var(--lac);
-  box-shadow: inset 0 0 0 1px var(--lac);
-}
-.ev--mine .ev__title {
-  color: var(--chalk);
-}
-.ev--dim {
-  opacity: 0.32;
-}
-
 .board-empty {
   padding: var(--sp-6);
   color: var(--dim);

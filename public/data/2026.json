@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-01T13:18:54.325Z",
+    "fetchedAt": "2026-07-01T16:18:14.049Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 339,
+    "eventCount": 340,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -1015,7 +1015,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Mihnea Costoiu, Francesco Corsini, Patrick Jermann, Gerardo Franco, Ahmed Al-Yamani, Tereza Horejsová, Bakhtiyor Makhkamov, Il-Kyu Yoon, Christopher S. Yoo, Hongwei Wang, Mostafa Hashem Sherif, Markus Schwertel, Juliane Schröter, Piotr Sankowski, Matthias Oschinski, Chantal Mveh, Pablo Marco, Innocent Macha, Juan Iván Martín Lataix, Jerry John Kponyo, Jude Dzevela Kong, Tanushree Kaushal, Michael Best, Rodrigo Baggio, Ludovico Biagi, Hao Qin, Dorothy Stanley, Balaraman Ravindran, Vijay Janapa Reddi, Em Lenartowicz, Cristian Axenie, Sher Verick, PeiChin Tay, Ann Elizabeth Borda, Francesca Larosa, Fatima Roumate, Abdurhman Albasir, Mehru Öztürk, Joana Santos, Lacina Koné, Alex Nomberto, Daniel Dobos, Luisa Olaya Hernández, Anna Abramova, Sarah Steinberg, Emily Edwards, Felix Kirchmeier, Supriya Bhuwalka, Bolor‑Erdene Battsengel, Laura Turkington, María Cristina Cárdenas Peralta, James Agajo, Ali Mansourian, Seizo Onoe, Ian F. Akyildiz, Mei Lin Fung, Virginia Dignum, Jérôme Duberry, Venkatesen Vijay Mauree, Bilel Jamoussi, Yannis Ioannidis, Celina Lee, Irakli Beridze, Eva Ibarrola",
+      "speakers": "Mihnea Costoiu, Francesco Corsini, Patrick Jermann, Gerardo Franco, Tereza Horejsová, Bakhtiyor Makhkamov, Il-Kyu Yoon, Christopher S. Yoo, Hongwei Wang, Mostafa Hashem Sherif, Markus Schwertel, Juliane Schröter, Piotr Sankowski, Matthias Oschinski, Chantal Mveh, Pablo Marco, Innocent Macha, Juan Iván Martín Lataix, Jerry John Kponyo, Jude Dzevela Kong, Tanushree Kaushal, Michael Best, Rodrigo Baggio, Ludovico Biagi, Hao Qin, Dorothy Stanley, Balaraman Ravindran, Vijay Janapa Reddi, Em Lenartowicz, Cristian Axenie, Sher Verick, PeiChin Tay, Ann Elizabeth Borda, Francesca Larosa, Fatima Roumate, Abdurhman Albasir, Mehru Öztürk, Joana Santos, Lacina Koné, Alex Nomberto, Daniel Dobos, Luisa Olaya Hernández, Anna Abramova, Sarah Steinberg, Emily Edwards, Felix Kirchmeier, Supriya Bhuwalka, Bolor‑Erdene Battsengel, Laura Turkington, Tshilidzi Marwala, María Cristina Cárdenas Peralta, James Agajo, Ali Mansourian, Seizo Onoe, Ian F. Akyildiz, Mei Lin Fung, Virginia Dignum, Jérôme Duberry, Venkatesen Vijay Mauree, Bilel Jamoussi, Yannis Ioannidis, Celina Lee, Irakli Beridze",
       "invitationOnly": true,
       "url": null
     },
@@ -1212,7 +1212,7 @@
     },
     {
       "id": "69879",
-      "title": "The Oracle at Poughkeepsie",
+      "title": "The Oracle at Poughkeepsie (Premiere)",
       "date": "2026-07-07",
       "startTime": "14:00",
       "endTime": "16:00",
@@ -2884,6 +2884,26 @@
       "url": "https://aiforgood.itu.int/event/why-the-ai-for-good-crisis-is-an-engineering-problem/"
     },
     {
+      "id": "83073",
+      "title": "Scaling AI that works: Evidence, partnerships and financing for sustainable impact, humanitarian action and resilience",
+      "date": "2026-07-08",
+      "startTime": "11:30",
+      "endTime": "12:00",
+      "startsAt": "2026-07-08T11:30:00",
+      "endsAt": "2026-07-08T12:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "UN AI Hub stage",
+      "eventType": "Panel",
+      "eventTypes": [
+        "Panel"
+      ],
+      "topics": [],
+      "speakers": "Vaishnavi Pavithran, Claire Zanuso, Aruna Francesca Maria Gujral, Indran Naidoo, Vincent Martin, Magan Naidoo",
+      "invitationOnly": false,
+      "url": null
+    },
+    {
       "id": "63117",
       "title": "Scaling AI for Good",
       "date": "2026-07-08",
@@ -3593,7 +3613,7 @@
         "Workshop"
       ],
       "topics": [],
-      "speakers": "Nicolas Miailhe, Maxime Stauffer, Peter Danenberg, Latif Ladid, Wei Kai, YU Xiaohui, Bilel Jamoussi",
+      "speakers": "Nicolas Miailhe, Maxime Stauffer, Peter Danenberg, Latif Ladid, Wei Kai, YU Xiaohui, Bilel Jamoussi, Yuntao Wang",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-foundation-model-evaluation-and-standards/"
     },
@@ -4848,7 +4868,7 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": "The Anomaly Detection for Assistance Delivery (ADAD) initiative",
+      "speakers": "Victor Hertel, The Anomaly Detection for Assistance Delivery (ADAD) initiative, Jorge Fernandes",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/the-anomaly-detection-for-assistance-delivery-adad-initiative/"
     },
@@ -4910,7 +4930,7 @@
         "Keynote"
       ],
       "topics": [],
-      "speakers": null,
+      "speakers": "Zhiyong Huang",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-good-intelligent-and-inclusive-symbiosis/"
     },
@@ -5135,8 +5155,10 @@
       "isMultiDay": false,
       "endDate": null,
       "location": "Room X",
-      "eventType": "",
-      "eventTypes": [],
+      "eventType": "Lunch",
+      "eventTypes": [
+        "Lunch"
+      ],
       "topics": [],
       "speakers": "Cyrus Hodes, Nicolas Miailhe",
       "invitationOnly": true,
@@ -5201,7 +5223,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Claire Leibowicz, Abigail Sellen, Marilena Hyeraci, Thomas Bause Mason, Juyuan Tang, Balaraman Ravindran, Philippe Rixhon, Leonard Rosenthol, Alessandra Sala, Bilel Jamoussi, Amir Banifatemi, Thomas Wiegand",
+      "speakers": "Claire Leibowicz, Abigail Sellen, Harsh Vardhan Nagar, Apostolos Symeonidis, Weronika Nitecka, Fatma Aksu, Simone Teglia, Killian Foloppe, Iman Attia, Mario Schweikert, Emanuel Lukawiecki, Marilena Hyeraci, Thomas Bause Mason, Juyuan Tang, Balaraman Ravindran, Philippe Rixhon, Leonard Rosenthol, Alessandra Sala, Bilel Jamoussi, Amir Banifatemi, Thomas Wiegand, Cristina Alexandra Trifan, Xavier Bruni",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-and-multimedia-authenticity-standards-2/"
     },
@@ -5476,9 +5498,9 @@
       "topics": [
         "AI for planet"
       ],
-      "speakers": null,
+      "speakers": "Ern Chern Khor, Sofie Maddens, Moon Choi, Laura Turkington",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/ageing-in-the-artificial-intelligence-era/"
+      "url": null
     },
     {
       "id": "77553",
@@ -5970,7 +5992,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Fatima Roumate, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Lydia Logan, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, Bolor‑Erdene Battsengel, Amanda Brock, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
+      "speakers": "Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Fatima Roumate, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, Michelle Gyles-McDonnough, Bolor‑Erdene Battsengel, Amanda Brock, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
       "invitationOnly": true,
       "url": null
     },
@@ -6094,7 +6116,7 @@
     },
     {
       "id": "64488",
-      "title": "The NEKRA Project: Final Assessment",
+      "title": "The NEKRA Project: Final Assessment (Premiere)",
       "date": "2026-07-09",
       "startTime": "17:00",
       "endTime": "17:10",
@@ -6252,7 +6274,7 @@
         "Training"
       ],
       "topics": [],
-      "speakers": "Amelle Benabdellaziz, Rafah Knight, Andrea Tribelhorn, Lu Zhang, Alexandra Hirzel, Guillem Martínez Roura",
+      "speakers": "Amelle Benabdellaziz, Rafah Knight, Andrea Tribelhorn, Alexandra Hirzel, Guillem Martínez Roura",
       "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/startup-accelerator-programme-2026-day4/"
     },
@@ -6552,7 +6574,7 @@
       ],
       "speakers": "May Thi Aye, Karen Mulberry, Hala Hibri, Lisa Bechtold, Rim Belhassine-Cherif, Alessandra Sala, Liya Yuan, Sasha Luccioni, Jonathan Nagao",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/advancing-womens-leadership-in-ai-and-standards/"
     },
     {
       "id": "75404",
