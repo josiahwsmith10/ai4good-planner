@@ -15,12 +15,13 @@
     "scrape:dry": "tsx scripts/scrape.ts --year 2026 --dry-run",
     "diff": "tsx scripts/diff.ts",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
+    "lint": "eslint --config .config/eslint.config.js .",
+    "lint:fix": "eslint --config .config/eslint.config.js . --fix",
+    "format": "prettier --config .config/prettierrc.json --write .",
+    "format:check": "prettier --config .config/prettierrc.json --check .",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepare": "lefthook install"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.1.1",
@@ -35,6 +36,7 @@
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.14.0",
+    "lefthook": "^1.10.0",
     "node-html-parser": "^7.0.1",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",

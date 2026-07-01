@@ -1,0 +1,13 @@
+# Git hooks (installed by `lefthook install`, run automatically via the "prepare" script).
+# pre-push mirrors the CI `checks` job, so failures are caught before they ever reach GitHub.
+pre-push:
+  parallel: true
+  commands:
+    typecheck:
+      run: npm run typecheck
+    lint:
+      run: npm run lint
+    format:
+      run: npm run format:check
+    test:
+      run: npm test
