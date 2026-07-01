@@ -37,7 +37,3 @@ events (or fewer than a floor) fails without overwriting the committed data.
 
 See `shared/schema.ts`. The envelope is evergreen — the year is data, not code, so a future
 year is another `public/data/<year>.json` file plus one `manifest.json` entry.
-
-## Commits
-
-Proposed commit messages are written to `CM.md`; commits are made by the repository owner.
