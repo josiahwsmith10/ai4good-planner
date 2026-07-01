@@ -1,0 +1,206 @@
+/* The board — two-axis departure grid. Sticky stage headers (top) + time ruler (left);
+   absolute event blocks inside fixed-width stage columns; overlay hour + now lines. */
+
+.board {
+  flex: 1;
+  overflow: auto;
+  background: var(--board);
+}
+
+.board__inner {
+  width: max-content;
+  min-width: 100%;
+  position: relative;
+}
+
+/* --- header row (stage platform signs) --- */
+.heads {
+  display: grid;
+  grid-template-columns: var(--grid-cols);
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  background: var(--board);
+  border-bottom: 1px solid var(--rule);
+}
+.corner {
+  position: sticky;
+  left: 0;
+  z-index: 9;
+  background: var(--board);
+  border-right: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dim);
+  font-size: 11px;
+}
+.stagehead {
+  padding: var(--sp-2);
+  border-left: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.stagehead__name {
+  font-family: var(--font-cond);
+  font-size: var(--fs-data);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stagehead__count {
+  font-size: 10px;
+  color: var(--dim);
+}
+
+/* --- plot (ruler + columns + overlay lines) --- */
+.plot {
+  display: grid;
+  grid-template-columns: var(--grid-cols);
+  position: relative;
+  z-index: 0;
+}
+.ruler {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: var(--board);
+  border-right: 1px solid var(--rule);
+}
+.ruler__tick {
+  position: absolute;
+  right: 6px;
+  transform: translateY(-6px);
+  color: var(--dim);
+  font-size: 11px;
+}
+.col {
+  position: relative;
+  border-left: 1px solid var(--rule);
+}
+.hourline {
+  position: absolute;
+  left: var(--ruler-w);
+  right: 0;
+  height: 0;
+  border-top: 1px solid var(--rule);
+  opacity: 0.5;
+  z-index: 1;
+  pointer-events: none;
+}
+.nowline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 2px solid var(--now);
+  z-index: 7;
+  pointer-events: none;
+}
+.nowline__label {
+  position: absolute;
+  left: 4px;
+  top: -8px;
+  background: var(--now);
+  color: var(--board);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* --- event blocks --- */
+.ev {
+  position: absolute;
+  box-sizing: border-box;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--kl);
+  border-radius: var(--r-1);
+  padding: 3px 5px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+  transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.ev:hover {
+  border-color: var(--dim);
+  z-index: 3;
+}
+.ev__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--dim);
+}
+.ev__inv {
+  color: var(--amber);
+}
+.ev__title {
+  font-size: var(--fs-data);
+  line-height: 1.2;
+  margin-top: 2px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.ev__star {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background: transparent;
+  border: none;
+  color: var(--dim);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  padding: 2px;
+  opacity: 0;
+  transition: opacity var(--dur);
+}
+.ev:hover .ev__star,
+.ev:focus-within .ev__star,
+.ev__star.is-on {
+  opacity: 1;
+}
+.ev__star.is-on {
+  color: var(--lac);
+}
+.ev--mine {
+  border-color: var(--lac);
+  box-shadow: inset 0 0 0 1px var(--lac);
+}
+.ev--mine .ev__title {
+  color: var(--chalk);
+}
+.ev--dim {
+  opacity: 0.32;
+}
+
+.board-empty {
+  padding: var(--sp-6);
+  color: var(--dim);
+}
+
+/* one-time board-settling entrance (never replays on filter changes) */
+@media (prefers-reduced-motion: no-preference) {
+  .board-wrap.is-enter .board__inner,
+  .board-wrap.is-enter .agenda {
+    animation: board-in 320ms var(--ease) both;
+  }
+  @keyframes board-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

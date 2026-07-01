@@ -1,0 +1,61 @@
+/* Le Grand Horaire — design tokens.
+   Palette: cool graphite board + three meaning-bearing accents (teal = yours,
+   rose = now/clash, amber = flags). Event-type colours are muted keylines only. */
+:root {
+  --board: #12181f;
+  --surface: #1b2530;
+  --surface-2: #223040;
+  --rule: #2a3946;
+  --chalk: #e7ecf0;
+  --dim: #8a9aa8;
+
+  --lac: #26c6b8; /* Lake Geneva teal — interactive + mine/yours */
+  --lac-ink: #063b38; /* text on teal fills */
+  --now: #ff5c8a; /* signal rose — live now-line + clash */
+  --amber: #f2a93b; /* platform amber — invitation-only + status */
+
+  /* muted, desaturated event-type keylines (never compete with the accents above) */
+  --type-keynote: #7fb2e6;
+  --type-panel: #9c8ce0;
+  --type-workshop: #5fc2a6;
+  --type-training: #c9a15e;
+  --type-roundtable: #e08fa8;
+  --type-social: #7e93a6; /* lunch / breakfast / networking / performance */
+  --type-default: #6e8598;
+
+  /* spacing */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+
+  /* radius */
+  --r-1: 3px;
+  --r-2: 6px;
+  --r-3: 10px;
+
+  /* type scale (mono-led) */
+  --fs-eyebrow: 11px;
+  --fs-data: 13px;
+  --fs-body: 15px;
+  --fs-title: 18px;
+  --fs-display: 24px;
+
+  /* motion */
+  --dur: 180ms;
+  --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+
+  /* board layout */
+  --ruler-w: 60px;
+  --col-w: 150px;
+
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur: 0ms;
+  }
+}

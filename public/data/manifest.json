@@ -1,0 +1,17 @@
+{
+  "defaultYear": 2026,
+  "generatedAt": "2026-07-01T13:18:54.341Z",
+  "years": [
+    {
+      "year": 2026,
+      "file": "2026.json",
+      "label": "Geneva · 7–10 Jul 2026",
+      "dates": {
+        "start": "2026-07-07",
+        "end": "2026-07-10"
+      },
+      "eventCount": 339,
+      "fetchedAt": "2026-07-01T13:18:54.325Z"
+    }
+  ]
+}

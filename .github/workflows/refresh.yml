@@ -1,0 +1,107 @@
+name: Refresh data
+
+# The lightest thing that keeps the snapshot current without babysitting: scrape the
+# programme daily, and IF it changed, open/update one rolling PR. Small, safe diffs
+# auto-merge; anything unusual waits for a human. A failed scrape never overwrites good data.
+#
+# One-time setup for this to run end-to-end:
+#   Settings → Actions → General → Workflow permissions:
+#     • "Read and write permissions"
+#     • enable "Allow GitHub Actions to create and approve pull requests"
+#   (Optional, for auto-merge to actually re-trigger Deploy: a merge made by the default
+#    GITHUB_TOKEN does NOT fire the Deploy push. Enable branch-protection required checks +
+#    repo "Allow auto-merge", or merge the PR with a fine-grained PAT. Human-clicked merges
+#    trigger Deploy normally.)
+
+on:
+  schedule:
+    # 05:17 UTC — off-the-hour (dodges cron congestion) and off-peak for the ITU site.
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+
+      # Keep the committed baseline for the semantic diff.
+      - name: Snapshot current data
+        run: cp public/data/2026.json /tmp/old.2026.json
+
+      # Scrape writes atomically and fails its sanity gates (0 events / floor / parse ratio)
+      # WITHOUT writing — so a broken source can never overwrite the committed file.
+      - name: Scrape
+        run: npm run scrape
+
+      # Semantic diff vs the baseline, ignoring the fetchedAt timestamp so an unchanged
+      # programme does not churn a daily commit. Sets outputs: changed / large / removed_vocab.
+      - name: Semantic diff
+        id: diff
+        run: npx tsx scripts/diff.ts public/data/2026.json /tmp/old.2026.json | tee /tmp/diff.md
+
+      # No semantic change → discard the timestamp-only churn so nothing is committed.
+      - name: Discard no-op churn
+        if: steps.diff.outputs.changed != 'true'
+        run: git checkout -- public/data
+
+      - name: Open / update pull request
+        id: cpr
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/data-refresh-2026
+          base: main
+          title: 'data: refresh 2026 snapshot'
+          body-path: /tmp/diff.md
+          labels: |
+            data-refresh
+            automated
+          commit-message: 'data: refresh 2026 snapshot'
+          add-paths: public/data
+
+      # Auto-merge only small, structurally safe diffs. Degrades gracefully (continue-on-error)
+      # if branch protection / auto-merge isn't configured.
+      - name: Auto-merge safe diffs
+        if: >-
+          steps.diff.outputs.changed == 'true' &&
+          steps.diff.outputs.large != 'true' &&
+          steps.diff.outputs.removed_vocab != 'true' &&
+          steps.cpr.outputs.pull-request-number
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
+
+      # Canary: if any step above failed (e.g. the source structure changed → 0 events),
+      # surface it in one rolling tracking issue rather than silent email-only failure.
+      - name: Flag failure
+        if: failure()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          existing=$(gh issue list --state open --search "Programme refresh failed in:title" --json number --jq '.[0].number')
+          if [ -z "$existing" ]; then
+            gh issue create --title "Programme refresh failed" \
+              --body "The scheduled scrape failed. The source structure may have changed, or the site was unreachable. Committed data was left untouched.\n\nRun: $RUN_URL"
+          else
+            gh issue comment "$existing" --body "Failed again. Run: $RUN_URL"
+          fi
