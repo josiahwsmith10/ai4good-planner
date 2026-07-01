@@ -33,7 +33,8 @@ export async function fetchHtml(url: string, opts: FetchOptions = {}): Promise<s
       });
       if (res.status === 429 || res.status >= 500) {
         const retryAfter = Number(res.headers.get('retry-after'));
-        if (Number.isFinite(retryAfter) && retryAfter > 0) await sleep(Math.min(30_000, retryAfter * 1000));
+        if (Number.isFinite(retryAfter) && retryAfter > 0)
+          await sleep(Math.min(30_000, retryAfter * 1000));
         throw new Error(`HTTP ${res.status}`);
       }
       if (!res.ok) throw new Error(`HTTP ${res.status}`);

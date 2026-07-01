@@ -92,14 +92,18 @@ export function Filters(dataset: Dataset, state: AppState, h: FilterHandlers): T
       </div>
 
       <div class="zoom" role="group" aria-label="Zoom">
-        <button class="zoom__btn mono" aria-label="Zoom out" @click=${() => h.zoom(1 / 1.2)}>−</button>
+        <button class="zoom__btn mono" aria-label="Zoom out" @click=${() => h.zoom(1 / 1.2)}>
+          −
+        </button>
         <button class="zoom__btn mono" aria-label="Zoom in" @click=${() => h.zoom(1.2)}>+</button>
       </div>
 
       <button class="btn btn--share" @click=${h.share}>Copy share link</button>
-      ${anyFilter
-        ? html`<button class="btn btn--ghost" @click=${h.clearFilters}>Clear</button>`
-        : ''}
+      ${
+        anyFilter
+          ? html`<button class="btn btn--ghost" @click=${h.clearFilters}>Clear</button>`
+          : ''
+      }
     </div>
   `;
 }

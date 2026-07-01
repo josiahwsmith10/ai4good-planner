@@ -80,7 +80,9 @@ const handlers = {
     syncUrl();
   },
   toggleInvitation: () => {
-    setState((s) => ({ filters: { ...s.filters, hideInvitationOnly: !s.filters.hideInvitationOnly } }));
+    setState((s) => ({
+      filters: { ...s.filters, hideInvitationOnly: !s.filters.hideInvitationOnly },
+    }));
     syncUrl();
   },
   setSearch: (v: string) => {
@@ -138,7 +140,7 @@ function rerender(): void {
   const state = getState();
   const segs = visibleSegments(dataset, state);
   const view = effectiveView();
-  const selected = selectedId ? dataset.byId.get(selectedId) ?? null : null;
+  const selected = selectedId ? (dataset.byId.get(selectedId) ?? null) : null;
   const enter = firstPaint;
   firstPaint = false;
 
@@ -159,13 +161,15 @@ function rerender(): void {
         </button>
       </div>
       <main class="board-wrap ${enter ? 'is-enter' : ''}">${body}</main>
-      ${selected
-        ? EventDetail(selected, state.mine.has(selected.id), {
-            toggleMine: handlers.toggleMine,
-            closeDetail: handlers.closeDetail,
-            programmeUrl: handlers.programmeUrl,
-          })
-        : nothing}
+      ${
+        selected
+          ? EventDetail(selected, state.mine.has(selected.id), {
+              toggleMine: handlers.toggleMine,
+              closeDetail: handlers.closeDetail,
+              programmeUrl: handlers.programmeUrl,
+            })
+          : nothing
+      }
       <div id="toast" class="toast" role="status" aria-live="polite"></div>
     `,
     root,

@@ -70,7 +70,8 @@ export function parseEvents(html: string): ParseResult {
     const postId = idMatch ? idMatch[1] : null;
 
     const exported = tryJson(node.getAttribute('data-export'));
-    if (!exported) parseErrors.push({ index, reason: `data-export parse failed (id=${idAttr || '?'})` });
+    if (!exported)
+      parseErrors.push({ index, reason: `data-export parse failed (id=${idAttr || '?'})` });
 
     const anchor =
       node.querySelector('.event-title h2 a') ?? node.querySelector('a[href*="/event/"]');

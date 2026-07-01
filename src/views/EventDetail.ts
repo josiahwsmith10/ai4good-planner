@@ -8,11 +8,7 @@ export interface DetailHandlers {
   programmeUrl: string;
 }
 
-export function EventDetail(
-  e: SummitEvent,
-  mine: boolean,
-  h: DetailHandlers,
-): TemplateResult {
+export function EventDetail(e: SummitEvent, mine: boolean, h: DetailHandlers): TemplateResult {
   const { dow, dom } = dayLabel(e.date);
   return html`
     <div
@@ -32,28 +28,28 @@ export function EventDetail(
         <h2 class="detail__title">${e.title}</h2>
         <div class="detail__meta mono">
           <div>
-            ${dow} ${dom} · ${e.startTime}–${e.endTime}${e.isMultiDay && e.endDate
-              ? html` <span class="detail__multi">→ through ${e.endDate}</span>`
-              : nothing}
+            ${dow} ${dom} ·
+            ${e.startTime}–${e.endTime}${
+              e.isMultiDay && e.endDate
+                ? html` <span class="detail__multi">→ through ${e.endDate}</span>`
+                : nothing
+            }
           </div>
           <div>${e.location ?? 'No stage assigned'}</div>
         </div>
-        ${e.topics.length
-          ? html`<div class="detail__topics">
-              ${e.topics.map((t) => html`<span class="chip chip--topic">${t}</span>`)}
-            </div>`
-          : nothing}
+        ${
+          e.topics.length
+            ? html`<div class="detail__topics">
+                ${e.topics.map((t) => html`<span class="chip chip--topic">${t}</span>`)}
+              </div>`
+            : nothing
+        }
         ${e.speakers ? html`<p class="detail__speakers">${e.speakers}</p>` : nothing}
         <div class="detail__actions">
           <button class="btn ${mine ? 'btn--on' : ''}" @click=${() => h.toggleMine(e.id)}>
             ${mine ? '★ On my board' : '☆ Add to my board'}
           </button>
-          <a
-            class="btn btn--link"
-            href=${e.url ?? h.programmeUrl}
-            target="_blank"
-            rel="noopener"
-          >
+          <a class="btn btn--link" href=${e.url ?? h.programmeUrl} target="_blank" rel="noopener">
             ${e.url ? 'Official page ↗' : 'Official programme ↗'}
           </a>
         </div>

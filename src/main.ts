@@ -15,7 +15,7 @@ import './styles/board.css';
 import type { Manifest, SummitData } from '../shared/schema';
 import { loadManifest, loadYear } from './data/loadData';
 import { buildDataset } from './data/normalize';
-import { initStore, getState, setState, emptyFilters, type AppState } from './state/store';
+import { initStore, setState, emptyFilters, type AppState } from './state/store';
 import { decodeHash, hasHash } from './state/urlState';
 import { loadMine } from './state/persistence';
 import { nowInZurich } from './lib/clock';

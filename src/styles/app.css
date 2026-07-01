@@ -460,7 +460,9 @@
   font-size: var(--fs-data);
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
   z-index: 60;
 }
 .toast.is-visible {

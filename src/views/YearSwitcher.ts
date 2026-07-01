@@ -11,11 +11,10 @@ export function YearSwitcher(
   return html`
     <label class="yearswitch mono">
       <span class="eyebrow">Year</span>
-      <select
-        @change=${(e: Event) => onSelect(Number((e.target as HTMLSelectElement).value))}
-      >
+      <select @change=${(e: Event) => onSelect(Number((e.target as HTMLSelectElement).value))}>
         ${manifest.years.map(
-          (y) => html`<option value=${y.year} ?selected=${y.year === activeYear}>${y.year}</option>`,
+          (y) =>
+            html`<option value=${y.year} ?selected=${y.year === activeYear}>${y.year}</option>`,
         )}
       </select>
     </label>

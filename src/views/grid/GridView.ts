@@ -104,23 +104,32 @@ export function GridView(
           <div class="ruler">
             ${layout.hourTicks.map(
               (t) => html`
-                <div class="ruler__tick mono" style="top:${(t - layout.startMin) * state.pxPerMin}px">
+                <div
+                  class="ruler__tick mono"
+                  style="top:${(t - layout.startMin) * state.pxPerMin}px"
+                >
                   ${fromMinutes(t)}
                 </div>
               `,
             )}
           </div>
           ${layout.hourTicks.map(
-            (t) => html`<div class="hourline" style="top:${(t - layout.startMin) * state.pxPerMin}px"></div>`,
+            (t) =>
+              html`<div
+                class="hourline"
+                style="top:${(t - layout.startMin) * state.pxPerMin}px"
+              ></div>`,
           )}
           ${cols.map(
             (c) => html`<div class="col">${c.blocks.map((b) => EventBlock(b, state, h))}</div>`,
           )}
-          ${showNow
-            ? html`<div class="nowline" style="top:${nowTop}px">
-                <span class="nowline__label mono">${fromMinutes(now.minutes)}</span>
-              </div>`
-            : nothing}
+          ${
+            showNow
+              ? html`<div class="nowline" style="top:${nowTop}px">
+                  <span class="nowline__label mono">${fromMinutes(now.minutes)}</span>
+                </div>`
+              : nothing
+          }
         </div>
       </div>
     </div>

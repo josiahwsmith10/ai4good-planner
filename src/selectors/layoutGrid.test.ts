@@ -48,7 +48,11 @@ describe('layoutGrid', () => {
 
   it('computes laneCount per overlap cluster, not globally', () => {
     // cluster 1: a,b overlap (2 lanes); gap; cluster 2: c alone (1 lane)
-    const segs = [seg('a', 'Room Q', 540, 600), seg('b', 'Room Q', 550, 610), seg('c', 'Room Q', 700, 760)];
+    const segs = [
+      seg('a', 'Room Q', 540, 600),
+      seg('b', 'Room Q', 550, 610),
+      seg('c', 'Room Q', 700, 760),
+    ];
     const { columns } = layoutGrid(segs, ['Room Q'], 1);
     const byId = new Map(columns[0].blocks.map((b) => [b.seg.event.id, b]));
     expect(byId.get('a')!.laneCount).toBe(2);

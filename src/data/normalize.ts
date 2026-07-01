@@ -54,7 +54,8 @@ export function buildDataset(data: SummitData): Dataset {
     if (!e.location) hasNoStage = true;
     const startMin = toMinutes(e.startTime);
     let endMin = toMinutes(e.endTime);
-    if (endMin < startMin) endMin = 24 * 60; // crosses midnight → clamp to end of day
+    if (endMin < startMin)
+      endMin = 24 * 60; // crosses midnight → clamp to end of day
     else if (endMin === startMin) endMin = Math.min(24 * 60, startMin + 30); // min slot
 
     const days = e.isMultiDay && e.endDate ? daysBetween(e.date, e.endDate) : [e.date];
@@ -64,5 +65,13 @@ export function buildDataset(data: SummitData): Dataset {
     }
   }
 
-  return { data, events, byId, sortedIds, segmentsByDay, locations: data.metadata.locations, hasNoStage };
+  return {
+    data,
+    events,
+    byId,
+    sortedIds,
+    segmentsByDay,
+    locations: data.metadata.locations,
+    hasNoStage,
+  };
 }

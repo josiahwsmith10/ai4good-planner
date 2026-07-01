@@ -12,11 +12,15 @@ export function Masthead(state: AppState, now: ZurichNow, mineCount: number): Te
   return html`
     <header class="masthead">
       <div class="masthead__brand">
-        ${isolate
-          ? html`<span class="masthead__word mono">▌ MY BOARD</span>
-              <span class="masthead__sub eyebrow">${mineCount} session${mineCount === 1 ? '' : 's'} · come find me</span>`
-          : html`<span class="masthead__word mono">AI·FOR·GOOD</span>
-              <span class="masthead__sub eyebrow">Le Grand Horaire · ${state.year}</span>`}
+        ${
+          isolate
+            ? html`<span class="masthead__word mono">▌ MY BOARD</span>
+                <span class="masthead__sub eyebrow"
+                  >${mineCount} session${mineCount === 1 ? '' : 's'} · come find me</span
+                >`
+            : html`<span class="masthead__word mono">AI·FOR·GOOD</span>
+                <span class="masthead__sub eyebrow">Le Grand Horaire · ${state.year}</span>`
+        }
       </div>
       <div class="masthead__clock">
         <span class="masthead__time mono">${fromMinutes(now.minutes)}</span>

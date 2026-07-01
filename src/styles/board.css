@@ -124,7 +124,9 @@
   overflow: hidden;
   cursor: pointer;
   z-index: 2;
-  transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition:
+    box-shadow var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
 }
 .ev:hover {
   border-color: var(--dim);

@@ -37,11 +37,14 @@ export function AgendaView(
             </div>
             <div class="agenda__main">
               <div class="agenda__meta mono">
-                ${e.location ?? 'No stage'} · ${e.eventTypes.join('/') || 'Session'}${e.invitationOnly
-                  ? html` · <span class="agenda__inv">✦ inv</span>`
-                  : nothing}${parallel
-                  ? html` · <span class="agenda__clash">⚠ ${parallel} parallel</span>`
-                  : nothing}
+                ${e.location ?? 'No stage'} ·
+                ${e.eventTypes.join('/') || 'Session'}${
+                  e.invitationOnly ? html` · <span class="agenda__inv">✦ inv</span>` : nothing
+                }${
+                  parallel
+                    ? html` · <span class="agenda__clash">⚠ ${parallel} parallel</span>`
+                    : nothing
+                }
               </div>
               <button class="agenda__title" @click=${() => h.open(e.id)}>${e.title}</button>
             </div>

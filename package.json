@@ -15,6 +15,10 @@
     "scrape:dry": "tsx scripts/scrape.ts --year 2026 --dry-run",
     "diff": "tsx scripts/diff.ts",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -26,10 +30,16 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.17.0",
     "@types/node": "^22.10.5",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
     "node-html-parser": "^7.0.1",
+    "prettier": "^3.4.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
+    "typescript-eslint": "^8.19.0",
     "vite": "^6.0.7",
     "vitest": "^2.1.8"
   }
