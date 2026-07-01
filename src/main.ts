@@ -24,6 +24,7 @@ import {
 } from './state/store';
 import { decodeHash, hasHash } from './state/urlState';
 import { nowInZurich } from './lib/clock';
+import { readThemePref } from './lib/theme';
 import { mountApp, setDataset } from './app';
 
 let manifest: Manifest;
@@ -41,6 +42,7 @@ function initialState(data: SummitData): AppState {
     filters: emptyFilters(),
     pxPerMin: DEFAULT_PX_PER_MIN,
     colWidths: {},
+    themePref: readThemePref(),
   };
   // A shared link (hash) wins over local defaults so it reproduces the same filtered view.
   if (hasHash()) {

@@ -14,6 +14,7 @@ describe('hash encode/decode', () => {
     },
     pxPerMin: 1.3,
     colWidths: {},
+    themePref: 'system',
   };
   const ctx = {
     validYears: [2026],

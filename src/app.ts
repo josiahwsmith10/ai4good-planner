@@ -15,6 +15,7 @@ import { visibleSegments } from './selectors/filterEvents';
 import { layoutGrid } from './selectors/layoutGrid';
 import { encodeHash } from './state/urlState';
 import { startClock, nowInZurich, type ZurichNow } from './lib/clock';
+import { applyTheme, nextThemePref, onSystemThemeChange, saveThemePref } from './lib/theme';
 import { Masthead } from './views/Masthead';
 import { BoardNotice } from './views/BoardNotice';
 import { DayTabs } from './views/DayTabs';
@@ -23,6 +24,7 @@ import { YearSwitcher } from './views/YearSwitcher';
 import { GridView } from './views/grid/GridView';
 import { AgendaView } from './views/AgendaView';
 import { EventDetail } from './views/EventDetail';
+import { ThemeToggle } from './views/ThemeToggle';
 
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 
@@ -143,6 +145,12 @@ const handlers = {
     }
   },
   selectYear: (y: number) => onYearChange(y),
+  cycleTheme: () => {
+    const pref = nextThemePref(getState().themePref);
+    saveThemePref(pref);
+    applyTheme(pref);
+    setState({ themePref: pref });
+  },
   toggleView: () => {
     viewOverride = effectiveView() === 'board' ? 'agenda' : 'board';
     scheduleRender();
@@ -180,6 +188,7 @@ function rerender(): void {
         <button class="btn btn--ghost viewtoggle" @click=${handlers.toggleView}>
           ${view === 'board' ? '☰ Agenda' : '▦ Board'}
         </button>
+        ${ThemeToggle(state.themePref, handlers)}
       </div>
       <main class="board-wrap ${enter ? 'is-enter' : ''}">${body}</main>
       ${
@@ -211,6 +220,9 @@ export function mountApp(
   dataset = ds;
   manifest = mf;
   onYearChange = opts.onYearChange;
+  applyTheme(getState().themePref);
+  // While the preference is "system", follow OS light/dark changes live.
+  onSystemThemeChange(() => applyTheme(getState().themePref));
   subscribe(() => scheduleRender());
   startClock((n) => {
     now = n;

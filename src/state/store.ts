@@ -1,3 +1,5 @@
+import type { ThemePref } from '../lib/theme';
+
 export interface Filters {
   locations: Set<string>;
   topics: Set<string>;
@@ -13,6 +15,9 @@ export interface AppState {
   pxPerMin: number; // vertical time scale
   // Per-stage-column width in px, keyed by column key; missing → DEFAULT_COL_WIDTH.
   colWidths: Record<string, number>;
+  // Light/dark preference. Personal display setting, so it is NOT serialized to the
+  // URL hash (see urlState.ts) — it persists per-device via localStorage instead.
+  themePref: ThemePref;
 }
 
 export const DEFAULT_PX_PER_MIN = 1.3;
