@@ -9,6 +9,3 @@ coverage/
 
 # local Claude Code settings
 .claude/settings.local.json
-
-# commit-message handoff file (not part of the project)
-CM.md
