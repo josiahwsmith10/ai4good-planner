@@ -9,6 +9,7 @@ import {
   toggleInSet,
   COL_WIDTH_MAX,
   COL_WIDTH_MIN,
+  DEFAULT_COL_WIDTH,
 } from './state/store';
 import { visibleSegments } from './selectors/filterEvents';
 import { layoutGrid } from './selectors/layoutGrid';
@@ -31,6 +32,8 @@ let manifest: Manifest;
 let now: ZurichNow = nowInZurich();
 let selectedId: string | null = null;
 let onYearChange: (year: number) => void = () => {};
+// Ordered keys of the currently-rendered board columns — used by the live column resize.
+let liveColKeys: string[] = [];
 
 // View: auto (agenda on phones, board otherwise) unless the user overrides.
 const narrow = window.matchMedia('(max-width: 700px)');
@@ -96,8 +99,32 @@ const handlers = {
   zoom: (delta: number) => {
     setState((s) => ({ pxPerMin: clamp(s.pxPerMin * delta, 0.5, 4) }));
   },
-  setColWidth: (px: number) => {
-    setState({ colWidth: clamp(px, COL_WIDTH_MIN, COL_WIDTH_MAX) });
+  // Excel-style column resize: drag the stage header's right edge. During the drag we set
+  // the grid template directly on the DOM (blocks are %-width, so they scale for free), then
+  // commit the final width to state on release for one clean re-render.
+  startResize: (key: string, e: PointerEvent) => {
+    e.preventDefault();
+    const startX = e.clientX;
+    const startW = getState().colWidths[key] ?? DEFAULT_COL_WIDTH;
+    const boardInner = root.querySelector<HTMLElement>('.board__inner');
+    let liveW = startW;
+    const template = (w: number) =>
+      `var(--ruler-w) ${liveColKeys
+        .map((k) => `${k === key ? w : (getState().colWidths[k] ?? DEFAULT_COL_WIDTH)}px`)
+        .join(' ')}`;
+    const onMove = (ev: PointerEvent) => {
+      liveW = clamp(startW + (ev.clientX - startX), COL_WIDTH_MIN, COL_WIDTH_MAX);
+      boardInner?.style.setProperty('--grid-cols', template(liveW));
+    };
+    const onUp = () => {
+      window.removeEventListener('pointermove', onMove);
+      window.removeEventListener('pointerup', onUp);
+      document.body.classList.remove('is-col-resizing');
+      setState((s) => ({ colWidths: { ...s.colWidths, [key]: liveW } }));
+    };
+    document.body.classList.add('is-col-resizing');
+    window.addEventListener('pointermove', onMove);
+    window.addEventListener('pointerup', onUp);
   },
   open: (id: string) => {
     selectedId = id;
@@ -133,10 +160,15 @@ function rerender(): void {
   const enter = firstPaint;
   firstPaint = false;
 
-  const body =
-    view === 'agenda'
-      ? AgendaView(segs, handlers)
-      : GridView(layoutGrid(segs, dataset.locations, state.pxPerMin), state, now, handlers);
+  let body;
+  if (view === 'agenda') {
+    liveColKeys = [];
+    body = AgendaView(segs, handlers);
+  } else {
+    const layout = layoutGrid(segs, dataset.locations, state.pxPerMin);
+    liveColKeys = layout.columns.map((c) => c.key);
+    body = GridView(layout, state, now, handlers);
+  }
 
   render(
     html`

@@ -11,7 +11,8 @@ export interface AppState {
   day: string;
   filters: Filters;
   pxPerMin: number; // vertical time scale
-  colWidth: number; // stage column width (px)
+  // Per-stage-column width in px, keyed by column key; missing → DEFAULT_COL_WIDTH.
+  colWidths: Record<string, number>;
 }
 
 export const DEFAULT_PX_PER_MIN = 1.3;

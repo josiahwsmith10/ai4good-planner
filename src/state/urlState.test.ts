@@ -13,7 +13,7 @@ describe('hash encode/decode', () => {
       search: 'ai',
     },
     pxPerMin: 1.3,
-    colWidth: 150,
+    colWidths: {},
   };
   const ctx = {
     validYears: [2026],

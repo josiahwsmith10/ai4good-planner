@@ -2,12 +2,14 @@ import { html, nothing, type TemplateResult } from 'lit-html';
 import { fromMinutes } from '../../lib/time';
 import { eventTypeVar } from '../../lib/format';
 import type { GridLayout, PlacedBlock } from '../../selectors/layoutGrid';
-import type { AppState } from '../../state/store';
+import { DEFAULT_COL_WIDTH, type AppState } from '../../state/store';
 import type { ZurichNow } from '../../lib/clock';
 import type { SummitEvent } from '../../../shared/schema';
 
 export interface GridHandlers {
   open: (id: string) => void;
+  /** Begin an Excel-style drag-resize of a stage column from its right edge. */
+  startResize: (key: string, e: PointerEvent) => void;
 }
 
 function blockAria(e: SummitEvent): string {
@@ -66,7 +68,9 @@ export function GridView(
     return html`<div class="board-empty mono">No sessions match — adjust the filters.</div>`;
   }
   const cols = layout.columns;
-  const gridCols = `var(--ruler-w) repeat(${cols.length}, ${state.colWidth}px)`;
+  const gridCols = `var(--ruler-w) ${cols
+    .map((c) => `${state.colWidths[c.key] ?? DEFAULT_COL_WIDTH}px`)
+    .join(' ')}`;
   const showNow =
     state.day === now.date && now.minutes >= layout.startMin && now.minutes <= layout.endMin;
   const nowTop = (now.minutes - layout.startMin) * state.pxPerMin;
@@ -81,6 +85,11 @@ export function GridView(
               <div class="stagehead" title=${c.label}>
                 <span class="stagehead__name">${c.label}</span>
                 <span class="stagehead__count mono">${c.count}</span>
+                <div
+                  class="stagehead__resize"
+                  title="Drag to resize column"
+                  @pointerdown=${(e: PointerEvent) => h.startResize(c.key, e)}
+                ></div>
               </div>
             `,
           )}

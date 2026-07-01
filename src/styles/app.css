@@ -209,17 +209,6 @@
   background: color-mix(in srgb, var(--amber) 12%, var(--surface));
 }
 
-.widthctl {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.widthctl input[type='range'] {
-  width: 96px;
-  accent-color: var(--lac);
-  cursor: pointer;
-}
-
 .zoom {
   display: inline-flex;
   gap: 2px;

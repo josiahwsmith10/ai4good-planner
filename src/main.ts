@@ -19,7 +19,6 @@ import {
   initStore,
   setState,
   emptyFilters,
-  DEFAULT_COL_WIDTH,
   DEFAULT_PX_PER_MIN,
   type AppState,
 } from './state/store';
@@ -41,7 +40,7 @@ function initialState(data: SummitData): AppState {
     day: defaultDay(meta.days),
     filters: emptyFilters(),
     pxPerMin: DEFAULT_PX_PER_MIN,
-    colWidth: DEFAULT_COL_WIDTH,
+    colWidths: {},
   };
   // A shared link (hash) wins over local defaults so it reproduces the same filtered view.
   if (hasHash()) {
