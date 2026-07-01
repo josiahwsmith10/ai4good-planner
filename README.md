@@ -1,4 +1,4 @@
-# AI for Good 2026 planner: "Le Grand Horaire"
+# AI for Good 2026 planner: ["Le Grand Horaire"](https://josiahwsmith10.github.io/ai4good-planner/)
 
 An **unofficial**, personal time-grid / conflict view for the
 [AI for Good Global Summit 2026](https://aiforgood.itu.int/summit26/programme/)
