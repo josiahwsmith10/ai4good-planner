@@ -1,5 +1,3 @@
-export type MineMode = 'off' | 'highlight' | 'isolate';
-
 export interface Filters {
   locations: Set<string>;
   topics: Set<string>;
@@ -12,10 +10,14 @@ export interface AppState {
   year: number;
   day: string;
   filters: Filters;
-  mine: Set<string>;
-  mineMode: MineMode;
-  pxPerMin: number;
+  pxPerMin: number; // vertical time scale
+  colWidth: number; // stage column width (px)
 }
+
+export const DEFAULT_PX_PER_MIN = 1.3;
+export const DEFAULT_COL_WIDTH = 150;
+export const COL_WIDTH_MIN = 96;
+export const COL_WIDTH_MAX = 320;
 
 export function emptyFilters(): Filters {
   return {
@@ -51,7 +53,7 @@ export function subscribe(l: Listener): () => void {
   return () => listeners.delete(l);
 }
 
-// Toggle helpers that return NEW sets (so setState sees a fresh reference).
+// Toggle helper for the filter facets — returns a NEW set so setState sees a fresh reference.
 export function toggleInSet(set: Set<string>, value: string): Set<string> {
   const next = new Set(set);
   if (next.has(value)) next.delete(value);

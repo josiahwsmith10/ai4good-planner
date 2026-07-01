@@ -13,8 +13,6 @@ export interface Dataset {
   data: SummitData;
   events: SummitEvent[];
   byId: Map<string, SummitEvent>;
-  /** Deterministic id order — the index space for the shareable "mine" bitset. */
-  sortedIds: string[];
   segmentsByDay: Map<string, DaySegment[]>;
   locations: string[];
   hasNoStage: boolean;
@@ -42,9 +40,6 @@ function daysBetween(start: string, end: string): string[] {
 export function buildDataset(data: SummitData): Dataset {
   const events = data.events;
   const byId = new Map(events.map((e) => [e.id, e]));
-  const sortedIds = events
-    .map((e) => e.id)
-    .sort((a, b) => Number(a) - Number(b) || a.localeCompare(b));
 
   const segmentsByDay = new Map<string, DaySegment[]>();
   for (const day of data.metadata.days) segmentsByDay.set(day, []);
@@ -69,7 +64,6 @@ export function buildDataset(data: SummitData): Dataset {
     data,
     events,
     byId,
-    sortedIds,
     segmentsByDay,
     locations: data.metadata.locations,
     hasNoStage,

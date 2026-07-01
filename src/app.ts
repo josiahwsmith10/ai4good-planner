@@ -7,12 +7,12 @@ import {
   subscribe,
   emptyFilters,
   toggleInSet,
-  type MineMode,
+  COL_WIDTH_MAX,
+  COL_WIDTH_MIN,
 } from './state/store';
 import { visibleSegments } from './selectors/filterEvents';
 import { layoutGrid } from './selectors/layoutGrid';
 import { encodeHash } from './state/urlState';
-import { saveMine } from './state/persistence';
 import { startClock, nowInZurich, type ZurichNow } from './lib/clock';
 import { Masthead } from './views/Masthead';
 import { BoardNotice } from './views/BoardNotice';
@@ -53,7 +53,7 @@ let urlTimer = 0;
 function syncUrl(): void {
   clearTimeout(urlTimer);
   urlTimer = window.setTimeout(() => {
-    const hash = encodeHash(getState(), dataset.sortedIds);
+    const hash = encodeHash(getState());
     const url = hash ? `#${hash}` : `${location.pathname}${location.search}`;
     history.replaceState(null, '', url);
   }, 250);
@@ -93,22 +93,11 @@ const handlers = {
     setState({ filters: emptyFilters() });
     syncUrl();
   },
-  setMineMode: (m: MineMode) => {
-    setState({ mineMode: m });
-    syncUrl();
-  },
   zoom: (delta: number) => {
     setState((s) => ({ pxPerMin: clamp(s.pxPerMin * delta, 0.5, 4) }));
   },
-  toggleMine: (id: string) => {
-    setState((s) => {
-      const mine = new Set(s.mine);
-      if (mine.has(id)) mine.delete(id);
-      else mine.add(id);
-      return { mine };
-    });
-    saveMine(getState().year, getState().mine);
-    syncUrl();
+  setColWidth: (px: number) => {
+    setState({ colWidth: clamp(px, COL_WIDTH_MIN, COL_WIDTH_MAX) });
   },
   open: (id: string) => {
     selectedId = id;
@@ -121,7 +110,7 @@ const handlers = {
   share: async () => {
     try {
       await navigator.clipboard.writeText(location.href);
-      toast('Share link copied');
+      toast('View link copied');
     } catch {
       toast('Copy failed — select the address bar');
     }
@@ -146,12 +135,12 @@ function rerender(): void {
 
   const body =
     view === 'agenda'
-      ? AgendaView(segs, state, handlers)
+      ? AgendaView(segs, handlers)
       : GridView(layoutGrid(segs, dataset.locations, state.pxPerMin), state, now, handlers);
 
   render(
     html`
-      ${Masthead(state, now, state.mine.size)} ${BoardNotice(dataset.data.metadata)}
+      ${Masthead(state, now)} ${BoardNotice(dataset.data.metadata)}
       <div class="controls">
         ${YearSwitcher(manifest, state.year, handlers.selectYear)}
         ${DayTabs(dataset.data.metadata.days, state.day, handlers.selectDay)}
@@ -163,8 +152,7 @@ function rerender(): void {
       <main class="board-wrap ${enter ? 'is-enter' : ''}">${body}</main>
       ${
         selected
-          ? EventDetail(selected, state.mine.has(selected.id), {
-              toggleMine: handlers.toggleMine,
+          ? EventDetail(selected, {
               closeDetail: handlers.closeDetail,
               programmeUrl: handlers.programmeUrl,
             })

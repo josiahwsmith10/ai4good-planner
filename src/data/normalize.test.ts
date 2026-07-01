@@ -58,20 +58,13 @@ describe('buildDataset', () => {
     expect(ds.segmentsByDay.get('2026-07-07')).toHaveLength(1);
     expect(ds.segmentsByDay.get('2026-07-08')).toHaveLength(1);
     expect(ds.segmentsByDay.get('2026-07-09')).toHaveLength(1);
-    // all segments reference the same underlying event id (so mine/isolate act as one)
+    // every segment references the same underlying event id
     expect(ds.segmentsByDay.get('2026-07-08')![0].event.id).toBe('7');
   });
 
   it('flags a "No stage" bucket when an event has no location', () => {
     const ds = buildDataset(data([ev({ location: null })], ['2026-07-07']));
     expect(ds.hasNoStage).toBe(true);
-  });
-
-  it('produces a deterministic numeric id ordering for the bitset index', () => {
-    const ds = buildDataset(
-      data([ev({ id: '100' }), ev({ id: '9' }), ev({ id: '11' })], ['2026-07-07']),
-    );
-    expect(ds.sortedIds).toEqual(['9', '11', '100']);
   });
 
   it('clamps an end-before-start (past-midnight) event to end of day', () => {

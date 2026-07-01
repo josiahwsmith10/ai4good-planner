@@ -209,28 +209,15 @@
   background: color-mix(in srgb, var(--amber) 12%, var(--surface));
 }
 
-.minemode {
+.widthctl {
   display: inline-flex;
-  border: 1px solid var(--rule);
-  border-radius: var(--r-2);
-  overflow: hidden;
+  align-items: center;
+  gap: 6px;
 }
-.minemode__btn {
-  padding: 6px 10px;
-  background: var(--surface);
-  color: var(--dim);
-  border: none;
-  border-left: 1px solid var(--rule);
-  font-size: var(--fs-data);
+.widthctl input[type='range'] {
+  width: 96px;
+  accent-color: var(--lac);
   cursor: pointer;
-}
-.minemode__btn:first-child {
-  border-left: none;
-}
-.minemode__btn.is-active {
-  background: var(--lac);
-  color: var(--lac-ink);
-  font-weight: 600;
 }
 
 .zoom {
@@ -273,12 +260,6 @@
   background: transparent;
   color: var(--dim);
 }
-.btn--on {
-  background: var(--lac);
-  color: var(--lac-ink);
-  border-color: var(--lac);
-  font-weight: 600;
-}
 
 .board-wrap {
   flex: 1;
@@ -303,13 +284,6 @@
   padding: var(--sp-3) var(--sp-5);
   border-bottom: 1px solid var(--rule);
   border-left: 3px solid var(--kl);
-}
-.agenda__row.is-mine {
-  background: color-mix(in srgb, var(--lac) 8%, transparent);
-  border-left-color: var(--lac);
-}
-.agenda__row.is-dim {
-  opacity: 0.4;
 }
 .agenda__time {
   min-width: 52px;
@@ -350,17 +324,6 @@
 }
 .agenda__title:hover {
   text-decoration: underline;
-}
-.agenda__star {
-  background: none;
-  border: none;
-  color: var(--dim);
-  font-size: 16px;
-  cursor: pointer;
-  padding: 2px;
-}
-.agenda__star.is-on {
-  color: var(--lac);
 }
 
 /* controls wrap tighter on phones */

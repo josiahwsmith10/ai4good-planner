@@ -151,39 +151,6 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.ev__star {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  background: transparent;
-  border: none;
-  color: var(--dim);
-  cursor: pointer;
-  font-size: 13px;
-  line-height: 1;
-  padding: 2px;
-  opacity: 0;
-  transition: opacity var(--dur);
-}
-.ev:hover .ev__star,
-.ev:focus-within .ev__star,
-.ev__star.is-on {
-  opacity: 1;
-}
-.ev__star.is-on {
-  color: var(--lac);
-}
-.ev--mine {
-  border-color: var(--lac);
-  box-shadow: inset 0 0 0 1px var(--lac);
-}
-.ev--mine .ev__title {
-  color: var(--chalk);
-}
-.ev--dim {
-  opacity: 0.32;
-}
-
 .board-empty {
   padding: var(--sp-6);
   color: var(--dim);

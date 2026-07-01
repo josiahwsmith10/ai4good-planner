@@ -3,12 +3,11 @@ import type { SummitEvent } from '../../shared/schema';
 import { dayLabel } from '../lib/format';
 
 export interface DetailHandlers {
-  toggleMine: (id: string) => void;
   closeDetail: () => void;
   programmeUrl: string;
 }
 
-export function EventDetail(e: SummitEvent, mine: boolean, h: DetailHandlers): TemplateResult {
+export function EventDetail(e: SummitEvent, h: DetailHandlers): TemplateResult {
   const { dow, dom } = dayLabel(e.date);
   return html`
     <div
@@ -46,9 +45,6 @@ export function EventDetail(e: SummitEvent, mine: boolean, h: DetailHandlers): T
         }
         ${e.speakers ? html`<p class="detail__speakers">${e.speakers}</p>` : nothing}
         <div class="detail__actions">
-          <button class="btn ${mine ? 'btn--on' : ''}" @click=${() => h.toggleMine(e.id)}>
-            ${mine ? '★ On my board' : '☆ Add to my board'}
-          </button>
           <a class="btn btn--link" href=${e.url ?? h.programmeUrl} target="_blank" rel="noopener">
             ${e.url ? 'Official page ↗' : 'Official programme ↗'}
           </a>

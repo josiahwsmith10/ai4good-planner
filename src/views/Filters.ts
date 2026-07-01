@@ -1,14 +1,14 @@
 import { html, type TemplateResult } from 'lit-html';
 import type { Dataset } from '../data/normalize';
-import type { AppState, MineMode } from '../state/store';
+import { COL_WIDTH_MAX, COL_WIDTH_MIN, type AppState } from '../state/store';
 
 export interface FilterHandlers {
   toggleFacet: (kind: 'locations' | 'topics' | 'eventTypes', value: string) => void;
   toggleInvitation: () => void;
   setSearch: (v: string) => void;
   clearFilters: () => void;
-  setMineMode: (m: MineMode) => void;
   zoom: (delta: number) => void;
+  setColWidth: (px: number) => void;
   share: () => void;
 }
 
@@ -19,8 +19,9 @@ function Facet(
   selected: Set<string>,
   h: FilterHandlers,
 ): TemplateResult {
+  // name="facet" groups the <details> so opening one natively closes any other that's open.
   return html`
-    <details class="facet">
+    <details class="facet" name="facet">
       <summary class="facet__summary mono">
         ${label}${selected.size ? html`<span class="facet__badge">${selected.size}</span>` : ''}
       </summary>
@@ -41,12 +42,6 @@ function Facet(
     </details>
   `;
 }
-
-const MINE_MODES: { mode: MineMode; label: string }[] = [
-  { mode: 'off', label: 'All' },
-  { mode: 'highlight', label: 'Highlight mine' },
-  { mode: 'isolate', label: 'Only mine' },
-];
 
 export function Filters(dataset: Dataset, state: AppState, h: FilterHandlers): TemplateResult {
   const meta = dataset.data.metadata;
@@ -77,28 +72,27 @@ export function Filters(dataset: Dataset, state: AppState, h: FilterHandlers): T
         ✦ Hide invitation only
       </button>
 
-      <div class="minemode" role="group" aria-label="My sessions view">
-        ${MINE_MODES.map(
-          ({ mode, label }) => html`
-            <button
-              class="minemode__btn mono ${state.mineMode === mode ? 'is-active' : ''}"
-              aria-pressed=${state.mineMode === mode ? 'true' : 'false'}
-              @click=${() => h.setMineMode(mode)}
-            >
-              ${label}
-            </button>
-          `,
-        )}
-      </div>
-
-      <div class="zoom" role="group" aria-label="Zoom">
+      <div class="zoom" role="group" aria-label="Time zoom">
         <button class="zoom__btn mono" aria-label="Zoom out" @click=${() => h.zoom(1 / 1.2)}>
           −
         </button>
         <button class="zoom__btn mono" aria-label="Zoom in" @click=${() => h.zoom(1.2)}>+</button>
       </div>
 
-      <button class="btn btn--share" @click=${h.share}>Copy share link</button>
+      <label class="widthctl mono" title="Stage column width">
+        <span class="eyebrow">Cols</span>
+        <input
+          type="range"
+          min=${COL_WIDTH_MIN}
+          max=${COL_WIDTH_MAX}
+          step="8"
+          .value=${String(state.colWidth)}
+          aria-label="Stage column width"
+          @input=${(e: Event) => h.setColWidth(Number((e.target as HTMLInputElement).value))}
+        />
+      </label>
+
+      <button class="btn btn--share" @click=${h.share}>Copy view link</button>
       ${
         anyFilter
           ? html`<button class="btn btn--ghost" @click=${h.clearFilters}>Clear</button>`

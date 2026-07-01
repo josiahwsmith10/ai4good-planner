@@ -7,7 +7,6 @@ import type { ZurichNow } from '../../lib/clock';
 import type { SummitEvent } from '../../../shared/schema';
 
 export interface GridHandlers {
-  toggleMine: (id: string) => void;
   open: (id: string) => void;
 }
 
@@ -23,16 +22,13 @@ function blockAria(e: SummitEvent): string {
     .join(', ');
 }
 
-function EventBlock(b: PlacedBlock, state: AppState, h: GridHandlers): TemplateResult {
+function EventBlock(b: PlacedBlock, h: GridHandlers): TemplateResult {
   const e = b.seg.event;
-  const mine = state.mine.has(e.id);
-  const dim = state.mineMode === 'highlight' && !mine;
   const leftPct = (b.lane / b.laneCount) * 100;
   const widthPct = 100 / b.laneCount;
-  const cls = `ev${mine ? ' ev--mine' : ''}${dim ? ' ev--dim' : ''}${e.invitationOnly ? ' ev--inv' : ''}`;
   return html`
     <article
-      class=${cls}
+      class="ev${e.invitationOnly ? ' ev--inv' : ''}"
       style="top:${b.top}px;height:${b.height}px;left:${leftPct}%;width:calc(${widthPct}% - 4px);--kl:var(${eventTypeVar(
         e.eventTypes,
       )})"
@@ -52,17 +48,6 @@ function EventBlock(b: PlacedBlock, state: AppState, h: GridHandlers): TemplateR
         ${e.invitationOnly ? html`<span class="ev__inv" title="Invitation only">✦</span>` : nothing}
       </div>
       <div class="ev__title">${e.title}</div>
-      <button
-        class="ev__star ${mine ? 'is-on' : ''}"
-        aria-pressed=${mine ? 'true' : 'false'}
-        title=${mine ? 'Remove from my board' : 'Add to my board'}
-        @click=${(ev: Event) => {
-          ev.stopPropagation();
-          h.toggleMine(e.id);
-        }}
-      >
-        ${mine ? '★' : '☆'}
-      </button>
     </article>
   `;
 }
@@ -81,7 +66,7 @@ export function GridView(
     return html`<div class="board-empty mono">No sessions match — adjust the filters.</div>`;
   }
   const cols = layout.columns;
-  const gridCols = `var(--ruler-w) repeat(${cols.length}, var(--col-w))`;
+  const gridCols = `var(--ruler-w) repeat(${cols.length}, ${state.colWidth}px)`;
   const showNow =
     state.day === now.date && now.minutes >= layout.startMin && now.minutes <= layout.endMin;
   const nowTop = (now.minutes - layout.startMin) * state.pxPerMin;
@@ -120,9 +105,7 @@ export function GridView(
                 style="top:${(t - layout.startMin) * state.pxPerMin}px"
               ></div>`,
           )}
-          ${cols.map(
-            (c) => html`<div class="col">${c.blocks.map((b) => EventBlock(b, state, h))}</div>`,
-          )}
+          ${cols.map((c) => html`<div class="col">${c.blocks.map((b) => EventBlock(b, h))}</div>`)}
           ${
             showNow
               ? html`<div class="nowline" style="top:${nowTop}px">

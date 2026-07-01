@@ -3,8 +3,8 @@
 An **unofficial**, personal time-grid / conflict view for the
 [AI for Good Global Summit 2026](https://aiforgood.itu.int/summit26/programme/)
 (Palexpo, Geneva · 7–10 July 2026). It renders every session on a two-axis board —
-stages across, time down — so overlapping sessions are obvious at a glance, and lets you
-mark the sessions you're attending and share that view.
+stages across, time down — so overlapping sessions are obvious at a glance, with filters
+for day, stage, topic and event type.
 
 > **Unofficial and not affiliated with the ITU.** This is a personal tool that mirrors a
 > snapshot of the official programme. Always verify against the
