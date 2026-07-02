@@ -1,8 +1,9 @@
 name: Refresh data
 
 # The lightest thing that keeps the snapshot current without babysitting: scrape the
-# programme daily, and IF it changed, open/update one rolling PR. Small, safe diffs
-# auto-merge; anything unusual waits for a human. A failed scrape never overwrites good data.
+# programme every 2 hours through summit week (schedule self-retires 2026-07-12), and IF
+# it changed, open/update one rolling PR. Small, safe diffs auto-merge; anything unusual
+# waits for a human. A failed scrape never overwrites good data.
 #
 # One-time setup for this to run end-to-end:
 #   1. Settings → Actions → General → Workflow permissions:
@@ -18,21 +19,49 @@ name: Refresh data
 
 on:
   schedule:
-    # 05:17 UTC — off-the-hour (dodges cron congestion) and off-peak for the ITU site.
-    - cron: '17 5 * * *'
+    # Every 2 hours at :17 — off-the-hour (dodges cron congestion), frequent enough to
+    # track a live programme during summit week. The gate job stops the schedule on
+    # 2026-07-12.
+    - cron: '17 */2 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write # gate job disables this workflow once the summit is over
 
 concurrency:
   group: refresh
   cancel-in-progress: true
 
 jobs:
+  # The programme stops changing once the summit wraps (2026-07-10), so the schedule stops
+  # on 2026-07-12: cron can't express an end date, so the first scheduled run on/after
+  # that date disables the workflow instead of scraping (last scheduled scrape is 22:17
+  # UTC on the 11th). Manual dispatch always runs, even past the date; bring the schedule
+  # back with: gh workflow enable 'Refresh data'
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - name: Retire schedule on 2026-07-12
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%Y%m%d)" -ge 20260712 ]; then
+            gh workflow disable 'Refresh data' --repo "${{ github.repository }}"
+            echo "go=false" >> "$GITHUB_OUTPUT"
+            echo "On/past 2026-07-12 — schedule retired; workflow disabled." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          fi
+
   refresh:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
