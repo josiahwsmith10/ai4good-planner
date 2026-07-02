@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-02T00:00:49.326Z",
+    "fetchedAt": "2026-07-02T00:28:45.479Z",
     "timezone": "Europe/Zurich",
     "eventCount": 341,
     "schemaVersion": 1,
@@ -65,7 +65,7 @@
   "events": [
     {
       "id": "78732",
-      "title": "AWS AI league — A competition-based AI tournament for social impact [CI end-to-end test — next refresh will correct this]",
+      "title": "AWS AI league — A competition-based AI tournament for social impact",
       "date": "2026-07-07",
       "startTime": "09:00",
       "endTime": "17:00",
