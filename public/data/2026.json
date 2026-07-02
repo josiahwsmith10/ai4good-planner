@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-01T16:18:14.049Z",
+    "fetchedAt": "2026-07-02T00:00:49.326Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 340,
+    "eventCount": 341,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -120,7 +120,9 @@
       "eventTypes": [
         "Workshop"
       ],
-      "topics": [],
+      "topics": [
+        "International AI Standards"
+      ],
       "speakers": null,
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-data-centres-to-climate-goals-international-standards-for-a-more-energy-efficient-ai/"
@@ -438,8 +440,10 @@
       "isMultiDay": false,
       "endDate": null,
       "location": "Room X",
-      "eventType": "",
-      "eventTypes": [],
+      "eventType": "Workshop",
+      "eventTypes": [
+        "Workshop"
+      ],
       "topics": [],
       "speakers": "Stuart Russell, Sara Rentdorff-Smith, Yoshua Bengio, Tristan Harris, Mary Robinson, Amir Banifatemi, Elham Tabassi, Sebastian Hallensleben, Arnaud Taddei, Helen McElhinney, Guilherme Canela, Anja Kaspersen, Lan Xue, Nicolas Moës",
       "invitationOnly": true,
@@ -2239,6 +2243,26 @@
       "url": "https://aiforgood.itu.int/event/embodied-ai-for-multimedia-technologies-from-perception-to-human-collaboration/"
     },
     {
+      "id": "74570",
+      "title": "Operationalizing AI impact assessment — The interplay between law-based frameworks and international standards",
+      "date": "2026-07-08",
+      "startTime": "09:00",
+      "endTime": "12:15",
+      "startsAt": "2026-07-08T09:00:00",
+      "endsAt": "2026-07-08T12:15:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Room S",
+      "eventType": "Workshop",
+      "eventTypes": [
+        "Workshop"
+      ],
+      "topics": [],
+      "speakers": null,
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/operationalizing-ai-impact-assessment-the-interplay-between-law-based-frameworks-and-international-standards/"
+    },
+    {
       "id": "52811",
       "title": "Quantum for Good: Industry leadership, innovation and real-world impact",
       "date": "2026-07-08",
@@ -2282,26 +2306,6 @@
       "speakers": "Duncan Sparrell, Ludovico Biagi, Gobi Ramasamy, Amrutha Moorthy, Megha Agarwal, Eunice Adewusi, Ng Arian Man Lok, Jose Dario Menendez Acosta, Piero Andres Aliaga Fernández, Meriem Kilani, Maria Alexandra Co Austria, Om Pradyumana Gupta, Rajesh Kumar Pathak, Leonhard Konstantin Cuzmin, Taylor Rodriguez Vance, Franck Junior Aboya Messou, Alharith Elghasri, Mark Anthony Arcayan, Andrew Vance, Himanshu Sharma, José Vila, Gregory Giuliani, Balaraman Ravindran, Julia Anna Leonardi, Gabriel Fonlladosa, Wang Jian, Pilar Orero, James Agajo, Ali Mansourian, Ian F. Akyildiz, Andrea Manara, Gyu Myoung Lee, Hoda Alkhzaimi, Ammar Muthanna, Vishnu Ram OV, Thomas Basikolo",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/kaleidoscope-academic-conference-ai-and-frontier-technologies-for-good/"
-    },
-    {
-      "id": "74570",
-      "title": "Operationalizing AI impact assessment — The interplay between law-based frameworks and international standards",
-      "date": "2026-07-08",
-      "startTime": "09:00",
-      "endTime": "12:15",
-      "startsAt": "2026-07-08T09:00:00",
-      "endsAt": "2026-07-08T12:15:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Room W",
-      "eventType": "Workshop",
-      "eventTypes": [
-        "Workshop"
-      ],
-      "topics": [],
-      "speakers": null,
-      "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/operationalizing-ai-impact-assessment-the-interplay-between-law-based-frameworks-and-international-standards/"
     },
     {
       "id": "66051",
@@ -2904,6 +2908,24 @@
       "url": null
     },
     {
+      "id": "83357",
+      "title": "Ministerial address",
+      "date": "2026-07-08",
+      "startTime": "11:40",
+      "endTime": "11:45",
+      "startsAt": "2026-07-08T11:40:00",
+      "endsAt": "2026-07-08T11:45:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Centre stage",
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [],
+      "speakers": "H.E. Mr. Lecheng Li",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/ministerial-address/"
+    },
+    {
       "id": "63117",
       "title": "Scaling AI for Good",
       "date": "2026-07-08",
@@ -3245,9 +3267,9 @@
       "title": "Welcome remarks",
       "date": "2026-07-08",
       "startTime": "14:00",
-      "endTime": "14:05",
+      "endTime": "14:10",
       "startsAt": "2026-07-08T14:00:00",
-      "endsAt": "2026-07-08T14:05:00",
+      "endsAt": "2026-07-08T14:10:00",
       "isMultiDay": false,
       "endDate": null,
       "location": "Centre stage",
@@ -3383,7 +3405,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Li Lecheng, Javier Minguez, Sebastian Tam, Ran D Balicer, Tiancheng Sheng, Sarah Aboerjaib, Max Ortiz Catalan, Deblina Sarkar, Liyan Liang, YU Xiaohui, Li Wenyu, Olivier Oullier, Tomas Lamanauskas, Anja Kaspersen",
+      "speakers": "H.E. Mr. Lecheng Li, Javier Minguez, Sebastian Tam, Ran D Balicer, Tiancheng Sheng, Sarah Aboerjaib, Max Ortiz Catalan, Deblina Sarkar, Liyan Liang, YU Xiaohui, Li Wenyu, Olivier Oullier, Tomas Lamanauskas, Anja Kaspersen",
       "invitationOnly": false,
       "url": null
     },
@@ -3613,7 +3635,7 @@
         "Workshop"
       ],
       "topics": [],
-      "speakers": "Nicolas Miailhe, Maxime Stauffer, Peter Danenberg, Latif Ladid, Wei Kai, YU Xiaohui, Bilel Jamoussi, Yuntao Wang",
+      "speakers": "Nicolas Miailhe, Yonghua Lin, Maxime Stauffer, Kangchan Lee, Peter Danenberg, Yuntao Wang, Shivagami Gugan, Latif Ladid, Arnaud Taddei, Wei Kai, Gilles Thonet, YU Xiaohui, Noah Luo, Bilel Jamoussi",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-foundation-model-evaluation-and-standards/"
     },
@@ -5516,7 +5538,7 @@
       "eventType": "",
       "eventTypes": [],
       "topics": [],
-      "speakers": "Jorge Fernandes",
+      "speakers": "Max Lamesch, Marco Chini, Jorge Fernandes",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-lab-to-field-ai-partnership-for-humanitarian-actions/"
     },
@@ -6288,7 +6310,7 @@
       "endsAt": "2026-07-10T12:15:00",
       "isMultiDay": false,
       "endDate": null,
-      "location": "Room 2",
+      "location": "Room 1",
       "eventType": "Workshop",
       "eventTypes": [
         "Workshop"
