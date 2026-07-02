@@ -5,13 +5,16 @@ name: Refresh data
 # auto-merge; anything unusual waits for a human. A failed scrape never overwrites good data.
 #
 # One-time setup for this to run end-to-end:
-#   Settings → Actions → General → Workflow permissions:
-#     • "Read and write permissions"
-#     • enable "Allow GitHub Actions to create and approve pull requests"
-#   (Optional, for auto-merge to actually re-trigger Deploy: a merge made by the default
-#    GITHUB_TOKEN does NOT fire the Deploy push. Enable branch-protection required checks +
-#    repo "Allow auto-merge", or merge the PR with a fine-grained PAT. Human-clicked merges
-#    trigger Deploy normally.)
+#   1. Settings → Actions → General → Workflow permissions:
+#        enable "Allow GitHub Actions to create and approve pull requests"
+#   2. Settings → General: enable "Allow auto-merge"
+#   3. Branch protection on main requiring the "checks" job (from deploy.yml) — this is
+#      the gate that makes auto-merge wait for typecheck/lint/format/tests to pass.
+#   4. A fine-grained PAT (Contents + Pull requests: read/write, this repo only) saved as
+#      the REFRESH_PAT secret. Required for full automation: a PR created with the default
+#      GITHUB_TOKEN cannot trigger the "checks" workflow, so the required check never
+#      reports and auto-merge waits forever; a GITHUB_TOKEN merge also doesn't fire the
+#      Deploy push. Without the secret everything still runs, but PRs wait for a human.
 
 on:
   schedule:
@@ -66,6 +69,7 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.REFRESH_PAT || github.token }}
           branch: bot/data-refresh-2026
           base: main
           title: 'data: refresh 2026 snapshot'
@@ -86,7 +90,7 @@ jobs:
           steps.cpr.outputs.pull-request-number
         continue-on-error: true
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.REFRESH_PAT || github.token }}
         run: gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
 
       # Canary: if any step above failed (e.g. the source structure changed → 0 events),
