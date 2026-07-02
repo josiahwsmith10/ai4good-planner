@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-02T09:34:39.045Z",
+    "fetchedAt": "2026-07-02T12:22:24.841Z",
     "timezone": "Europe/Zurich",
     "eventCount": 343,
     "schemaVersion": 1,
@@ -870,7 +870,7 @@
       "topics": [
         "AI creativity & culture"
       ],
-      "speakers": "Wernhard Berger, Volodin Borislav Borisovich, Christian Thiam, Anna Abramova",
+      "speakers": "Wernhard Berger, Volodin Borislav Borisovich, Christian Thiam, Anna Abramova, Vincent F. Valentine",
       "invitationOnly": false,
       "url": null
     },
@@ -888,7 +888,7 @@
       "eventType": "",
       "eventTypes": [],
       "topics": [],
-      "speakers": "Alexander Kriebitz, Andrei Baciu, Alex Read, Robert Opp",
+      "speakers": "Dina Al-Bashir, Alexander Kriebitz, Andrei Baciu, Alex Read, Robert Opp",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/harnessing-ai-for-good-the-parliamentary-role/"
     },
@@ -2197,7 +2197,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Nkundwe Mwasaga, Barbora Bromová, Aziz Mukhitdinov, Amjad El Nayal, Lacina Koné, Sray Agarwal, Anna Abramova, Rehab Alarfaj, Lihui Xu, Lilibeth Acosta, Gabriela Ramos, Robert Opp, Vishnu Ram OV, Bilel Jamoussi, Irakli Beridze, Venkatesen Vijay Mauree",
+      "speakers": "Nkundwe Mwasaga, Barbora Bromová, Aziz Mukhitdinov, Amjad El Nayal, Lacina Koné, Sray Agarwal, Anna Abramova, Rehab Alarfaj, Lihui Xu, Lilibeth Acosta, Gabriela Ramos, Robert Opp, Vishnu Ram OV, Bilel Jamoussi, Irakli Beridze, Venkatesen Vijay Mauree, Atul Sinha",
       "invitationOnly": false,
       "url": null
     },
@@ -2241,7 +2241,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": null,
+      "speakers": "Wafa Ben-Hassine, Matthias Kloth, Erich Kieck, Jeremy Ng, Harry Verweij, Gilles Thonet, Cindy Parokkil, Boris Inderbitzin, Daniel Pap, Nevine Tewfik, Mauricio Gibson, Michel Roberto Oliveira de Souza, Susanne Kuchs",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/operationalizing-ai-impact-assessment-the-interplay-between-law-based-frameworks-and-international-standards/"
     },
@@ -3761,9 +3761,9 @@
       "eventType": "",
       "eventTypes": [],
       "topics": [],
-      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi",
+      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi, Chantal Mveh, Nkundwe Mwasaga, Atul Sinha",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/ai-for-good-lab-high-level-roundtable/"
+      "url": null
     },
     {
       "id": "74979",
@@ -4962,7 +4962,7 @@
     },
     {
       "id": "80948",
-      "title": "AI for good: Intelligent and inclusive symbiosis",
+      "title": "AI for good, Intelligence for Inclusive Coexistence",
       "date": "2026-07-09",
       "startTime": "11:10",
       "endTime": "11:30",
@@ -5033,9 +5033,9 @@
       "isMultiDay": false,
       "endDate": null,
       "location": "Solutions stage",
-      "eventType": "Keynote",
+      "eventType": "Networking reception",
       "eventTypes": [
-        "Keynote"
+        "Networking reception"
       ],
       "topics": [
         "Impact & innovation"
@@ -5486,7 +5486,7 @@
       ],
       "speakers": "Seizo Onoe, Jianping Xiang, Kasiet Kachaganova, Lauri Rechardt, Amelle Benabdellaziz, Ulrike Till",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/from-idea-to-impact-ip-strategies-for-ai-entrepreneurs/"
     },
     {
       "id": "56968",
@@ -6020,7 +6020,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Fatima Roumate, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, Michelle Gyles-McDonnough, Bolor‑Erdene Battsengel, Amanda Brock, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
+      "speakers": "Kathleen Ziemann, Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Fatima Roumate, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, will.i.am ‎, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, Michelle Gyles-McDonnough, H.E. Dr. Takuo Imagawa, Bolor‑Erdene Battsengel, Amanda Brock, María Cristina Cárdenas Peralta, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
       "invitationOnly": true,
       "url": null
     },
@@ -6725,7 +6725,7 @@
       "eventType": "",
       "eventTypes": [],
       "topics": [],
-      "speakers": "David Manset",
+      "speakers": "David Manset, Francois Grey, Gaëlle Foucault",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-silicon-to-sovereignty-open-hardware-for-the-next-generation-of-open-source-ai/"
     },
@@ -6936,7 +6936,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": null,
+      "speakers": "Cosmas Luckyson Zavazava, David Manset, Mariela Machado Fantacchiotti, Mary Kerema",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-challenge-to-capacity-trustworthy-genie-ai-as-an-open-source-foundation-for-public-sector-genai/"
     },
