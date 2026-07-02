@@ -1,6 +1,6 @@
 {
   "defaultYear": 2026,
-  "generatedAt": "2026-07-02T00:28:45.502Z",
+  "generatedAt": "2026-07-02T06:11:14.201Z",
   "years": [
     {
       "year": 2026,
@@ -10,8 +10,8 @@
         "start": "2026-07-07",
         "end": "2026-07-10"
       },
-      "eventCount": 341,
-      "fetchedAt": "2026-07-02T00:28:45.479Z"
+      "eventCount": 340,
+      "fetchedAt": "2026-07-02T06:11:14.179Z"
     }
   ]
 }
