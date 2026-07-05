@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-05T15:50:26.682Z",
+    "fetchedAt": "2026-07-05T17:32:52.115Z",
     "timezone": "Europe/Zurich",
     "eventCount": 348,
     "schemaVersion": 1,
@@ -2434,7 +2434,7 @@
       "topics": [
         "AI & mobility"
       ],
-      "speakers": "Sky Li, Sven Virginie R. De Smet, Arianne Alcorta, Aleksei Shpilman, Michael Sena, Anacláudia Rossbach, Christian Thiele, will.i.am, Jeroen Beukers, Katherine Evans, Jose Ignacio (Nacho) Rexach, Ricardo Ortega, Tatiana Molcean, Francesco Flammini, Roger C. Lanctot, Dmitry Mariyasin, Seizo Onoe, Francois Guichard, Jean Todt, Bilel Jamoussi",
+      "speakers": "Seizo Onoe, will.i.am, Bilel Jamoussi, Sky Li, Sven Virginie R. De Smet, Arianne Alcorta, Aleksei Shpilman, Michael Sena, Anacláudia Rossbach, Christian Thiele, Jeroen Beukers, Katherine Evans, Jose Ignacio (Nacho) Rexach, Ricardo Ortega, Tatiana Molcean, Francesco Flammini, Roger C. Lanctot, Dmitry Mariyasin, Francois Guichard, Jean Todt, Namir Hourani",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/autonomous-x-mobility-the-global-congress-on-ai-powered-mobility/"
     },
@@ -5652,7 +5652,7 @@
     },
     {
       "id": "80516",
-      "title": "From Plan to Plate: AI That Designs Out Steel Waste",
+      "title": "From plan to plate: AI that designs out steel waste",
       "date": "2026-07-09",
       "startTime": "14:30",
       "endTime": "15:00",
@@ -5670,7 +5670,7 @@
       ],
       "speakers": "Juxihong Julaiti",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/keynote-2/"
+      "url": "https://aiforgood.itu.int/event/from-plan-to-plate-ai-that-designs-out-steel-waste/"
     },
     {
       "id": "62486",
