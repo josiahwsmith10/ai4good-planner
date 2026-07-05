@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-05T19:43:28.320Z",
+    "fetchedAt": "2026-07-05T23:29:10.667Z",
     "timezone": "Europe/Zurich",
     "eventCount": 348,
     "schemaVersion": 1,
@@ -2434,7 +2434,7 @@
       "topics": [
         "AI & mobility"
       ],
-      "speakers": "Sky Li, Sven Virginie R. De Smet, Arianne Alcorta, Aleksei Shpilman, Michael Sena, Anacláudia Rossbach, Christian Thiele, will.i.am, Jeroen Beukers, Katherine Evans, Jose Ignacio (Nacho) Rexach, Ricardo Ortega, Tatiana Molcean, Francesco Flammini, Roger C. Lanctot, Dmitry Mariyasin, Seizo Onoe, Francois Guichard, Jean Todt, Bilel Jamoussi",
+      "speakers": "Seizo Onoe, will.i.am, Bilel Jamoussi, Sky Li, Sven Virginie R. De Smet, Arianne Alcorta, Aleksei Shpilman, Michael Sena, Anacláudia Rossbach, Christian Thiele, Jeroen Beukers, Katherine Evans, Jose Ignacio (Nacho) Rexach, Ricardo Ortega, Tatiana Molcean, Francesco Flammini, Roger C. Lanctot, Dmitry Mariyasin, Francois Guichard, Jean Todt, Namir Hourani",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/autonomous-x-mobility-the-global-congress-on-ai-powered-mobility/"
     },
