@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-07T10:02:15.781Z",
+    "fetchedAt": "2026-07-07T12:40:42.888Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 354,
+    "eventCount": 355,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -14,6 +14,7 @@
       "2026-07-10"
     ],
     "locations": [
+      "AI Art Gallery",
       "Centre stage",
       "Frontier stage",
       "Hall 2",
@@ -2243,7 +2244,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Anna Matamala, Bret Jordan, Rongwei Ren, Emily Chen, Heung Youl Youm, Andres Marafioti, Lyn Wang, Yonghua Lin, Shin-Gak Kang, Weimin Zhang, Marija Jankovic, Boxun Li, Avinash Agarwal, Yuntao Wang, Andrea Cavallaro, Sebastian Hallensleben, Seizo Onoe, Wuqiang Yang, Noah Luo, Bilel Jamoussi, Unitree G1",
+      "speakers": "H.E. Mr. Lecheng Li, Anna Matamala, Bret Jordan, Rongwei Ren, Emily Chen, Heung Youl Youm, Andres Marafioti, Lyn Wang, Yonghua Lin, Shin-Gak Kang, Weimin Zhang, Marija Jankovic, Boxun Li, Avinash Agarwal, Yuntao Wang, Andrea Cavallaro, Sebastian Hallensleben, Seizo Onoe, Wuqiang Yang, Noah Luo, Bilel Jamoussi, Unitree G1",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/embodied-ai-for-multimedia-technologies-from-perception-to-human-collaboration/"
     },
@@ -2296,9 +2297,9 @@
       "title": "Kaleidoscope academic conference – AI and frontier technologies for good",
       "date": "2026-07-08",
       "startTime": "09:00",
-      "endTime": "17:15",
+      "endTime": "18:00",
       "startsAt": "2026-07-08T09:00:00",
-      "endsAt": "2026-07-08T17:15:00",
+      "endsAt": "2026-07-08T18:00:00",
       "isMultiDay": false,
       "endDate": null,
       "location": "Room U",
@@ -3891,7 +3892,7 @@
         "Roundtable"
       ],
       "topics": [],
-      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi, Chantal Mveh, Nkundwe Mwasaga, Atul Sinha, Isaac Boateng, Manal Al Afad, Tomas Lamanauskas, Prof Dr Lourino Chemane, H.E. Mr. Diego Belevan",
+      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi, Chantal Mveh, Nkundwe Mwasaga, Atul Sinha, Isaac Boateng, Manal Al Afad, Tomas Lamanauskas, Prof Dr Lourino Chemane, H.E. Mr. Diego Belevan, John Omo",
       "invitationOnly": false,
       "url": null
     },
@@ -4354,6 +4355,24 @@
       "speakers": "Will Marshall",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/planetary-intelligence-ai-for-the-21st-century-earth/"
+    },
+    {
+      "id": "88477",
+      "title": "UNICEF Digital Inclusion reception",
+      "date": "2026-07-08",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "startsAt": "2026-07-08T17:30:00",
+      "endsAt": "2026-07-08T19:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "AI Art Gallery",
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [],
+      "speakers": null,
+      "invitationOnly": true,
+      "url": "https://aiforgood.itu.int/event/unicef-digital-inclusion-reception/"
     },
     {
       "id": "54564",
@@ -6471,6 +6490,26 @@
       "url": "https://aiforgood.itu.int/event/ai-for-good-ambassadors-breakfast-frontier-tech-briefing/"
     },
     {
+      "id": "54518",
+      "title": "UN CIO AI forum: Operationalizing AI across the United Nations system",
+      "date": "2026-07-10",
+      "startTime": "08:15",
+      "endTime": "16:45",
+      "startsAt": "2026-07-10T08:15:00",
+      "endsAt": "2026-07-10T16:45:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Room W",
+      "eventType": "Workshop",
+      "eventTypes": [
+        "Workshop"
+      ],
+      "topics": [],
+      "speakers": "Doreen Bogdan-Martin, Bernardo Mariano Junior, Khuloud Odeh, Shirin Hamid, Qahir Dhanani, Talea Von Lupin, Timothy Grosser, Sylvain St-Pierre, Robert Opp, Karl Kalejs, Steven Gemmel, Cristina Segal, Enrica Porcari, Jean-Michel Baudoin, Amy Jean Doherty, Marietta Muwanga-Ssevume, Jordan Robert, Alessandra Furtado, Aline Weinsheimer, Sameer Chauhan, Kaan Çetintürk, Ana Paula Nishio de Sousa, Michael Tsan, Tomas Lamanauskas, Jonas Pasquier",
+      "invitationOnly": true,
+      "url": null
+    },
+    {
       "id": "69846",
       "title": "Impact initiative breakfast meeting",
       "date": "2026-07-10",
@@ -6643,26 +6682,6 @@
       "speakers": "Weimin Zhang, Marija Jankovic, Ritu Ranjan Mittar, Denis Andreev, Boris Wrubel, Mohammad Hammoudeh, Giulio Maggiore, Andrey Koucheryavy, Alexey Borodin, Huifen Wang, Sebastian Hallensleben, Anna Abramova, Artem Volkov",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-benchmarking-and-ai-powered-testing/"
-    },
-    {
-      "id": "54518",
-      "title": "UN CIO AI forum: Operationalizing AI across the United Nations system",
-      "date": "2026-07-10",
-      "startTime": "09:00",
-      "endTime": "17:15",
-      "startsAt": "2026-07-10T09:00:00",
-      "endsAt": "2026-07-10T17:15:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Room W",
-      "eventType": "Workshop",
-      "eventTypes": [
-        "Workshop"
-      ],
-      "topics": [],
-      "speakers": "Qahir Dhanani, Sylvain St-Pierre, Michael Tsan, Talea Von Lupin, Timothy Grosser, Cristina Segal, Jean-Michel Baudoin, Andrea Caporale, Steven Gemmel, Khuloud Odeh, Amy Jean Doherty, Enrica Porcari, Shirin Hamid, Kaan Çetintürk, Marietta Muwanga-Ssevume, Ana Paula Nishio de Sousa, Sameer Chauhan, Tomas Lamanauskas, Dejan Jakovljevic, Robert Opp",
-      "invitationOnly": true,
-      "url": null
     },
     {
       "id": "66068",
