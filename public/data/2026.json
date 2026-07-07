@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-07T16:42:55.566Z",
+    "fetchedAt": "2026-07-07T20:16:59.125Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -2288,7 +2288,7 @@
       "topics": [
         "Quantum for Good"
       ],
-      "speakers": "Bruno Huttner, Anna Beata Kalisz Hedegaard, Harry Kumar, Mark Carney, Alessandra Jabłonowska, Hao Qin, Kai and Katia, Fernando Guerra Alves, H.E. Dr. Mohamed Al Kuwaiti, Mekena McGrew, Wiktor Mazin, Emily Edwards, Victoria Kumaran, Gregoire Ribordy, Cierra Lunde Choucair, Tamás Varga, Elisa Torres, David Cuckow, Gillian Makamara, Erica Moret, James A. Grieve, Wissal Sidi El Khir, Rebecca Krauthamer",
+      "speakers": "Bruno Huttner, Anna Beata Kalisz Hedegaard, Harry Kumar, Mark Carney, Alessandra Jabłonowska, Hao Qin, Katia Moskvitch and Kai Weber, Fernando Guerra Alves, H.E. Dr. Mohamed Al Kuwaiti, Mekena McGrew, Wiktor Mazin, Emily Edwards, Victoria Kumaran, Gregoire Ribordy, Cierra Lunde Choucair, Tamás Varga, Elisa Torres, David Cuckow, Gillian Makamara, Erica Moret, James A. Grieve, Wissal Sidi El Khir, Rebecca Krauthamer",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/quantum-for-good-industry-leadership-innovation-and-real-world-impact-2/"
     },
@@ -3388,7 +3388,7 @@
         "Keynote"
       ],
       "topics": [],
-      "speakers": "Khaled El-Enany",
+      "speakers": "Åsa Regnér",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/welcome-remarks-3/"
     },
@@ -3496,26 +3496,6 @@
       "speakers": "Thomas Schneider, Nand Kumarum",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/open-mic-consultation-session-to-the-ai-summit-geneva-2027/"
-    },
-    {
-      "id": "77563",
-      "title": "Brain-Computer Interface technologies for good coupled with standards cooperation",
-      "date": "2026-07-08",
-      "startTime": "14:00",
-      "endTime": "17:35",
-      "startsAt": "2026-07-08T14:00:00",
-      "endsAt": "2026-07-08T17:35:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Room R",
-      "eventType": "Panel",
-      "eventTypes": [
-        "Panel"
-      ],
-      "topics": [],
-      "speakers": "YU Xiaohui, Tomas Lamanauskas, Li Wenyu, Max Ortiz Catalan, Anja Kaspersen, Deblina Sarkar, Sarah Aboerjaib, Liyan Liang, Olivier Oullier, Sebastian Tam, Javier Minguez, Tiancheng Sheng, Iurii Vasilev, Venkatesen Vijay Mauree",
-      "invitationOnly": false,
-      "url": null
     },
     {
       "id": "55847",
@@ -4357,6 +4337,26 @@
       "url": "https://aiforgood.itu.int/event/planetary-intelligence-ai-for-the-21st-century-earth/"
     },
     {
+      "id": "77563",
+      "title": "Brain-Computer Interface technologies for good coupled with standards cooperation",
+      "date": "2026-07-08",
+      "startTime": "17:15",
+      "endTime": "17:30",
+      "startsAt": "2026-07-08T17:15:00",
+      "endsAt": "2026-07-08T17:30:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Solutions stage",
+      "eventType": "Panel",
+      "eventTypes": [
+        "Panel"
+      ],
+      "topics": [],
+      "speakers": null,
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/brain-computer-interface-technologies-for-good-coupled-with-standards-cooperation/"
+    },
+    {
       "id": "88477",
       "title": "UNICEF Digital Inclusion reception",
       "date": "2026-07-08",
@@ -4814,7 +4814,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Gerardo Franco, Sarah Alonso Vega, Deirdre Lee, Mariana Christen Jakob, Gillian Hinde, Moon Choi, Laura Turkington, Tara Chklovski",
+      "speakers": "Gerardo Franco, Abigail C Gooch, Anne Sawyer, Sarah Alonso Vega, Deirdre Lee, Mariana Christen Jakob, Moon Choi, Laura Turkington, Tara Chklovski, Jenny Arana",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/bridging-generations-with-ai-upskilling-youth-and-older-adults-for-an-inclusive-ai-future/"
     },
@@ -5812,7 +5812,7 @@
     },
     {
       "id": "66982",
-      "title": "Defining and scaling beneficial model behaviors assessment",
+      "title": "Toward beneficial AI for children, Defining and scaling model behaviors assessment",
       "date": "2026-07-09",
       "startTime": "14:30",
       "endTime": "15:00",
