@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-06T15:55:50.829Z",
+    "fetchedAt": "2026-07-07T10:02:15.781Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 352,
+    "eventCount": 354,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -168,7 +168,7 @@
         "AI for planet",
         "International AI Standards"
       ],
-      "speakers": "H.E. Mr. Serge Wilmes, Fritz Pickhardt, Patrick Ebel, Anacláudia Rossbach, Costanza Bonadonna, Jesper Dramsch, Jessica Rapson, Rakiya A. B. Babamaaji, Arif Albayrak, Florian Pappenberger, Jumpei Takami, Hwirin Kim, Lorenzo Nava, Celeste Saulo, Elena Xoplaki, Pierre-Philippe Mathieu, Monique Kuglitsch, Muralee Thummarukudy, Bilel Jamoussi, Thomas Schoos, Martin Bailey",
+      "speakers": "H.E. Mr. Serge Wilmes, Fritz Pickhardt, Patrick Ebel, Anacláudia Rossbach, Costanza Bonadonna, Jesper Dramsch, Jessica Rapson, Rakiya A. B. Babamaaji, Arif Albayrak, Florian Pappenberger, Jumpei Takami, Hwirin Kim, Lorenzo Nava, Celeste Saulo, Elena Xoplaki, Pierre-Philippe Mathieu, Monique Kuglitsch, Muralee Thummarukudy, Bilel Jamoussi, Thomas Schoos, Kamal Kishore, Jennifer Selby",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-in-disaster-resilience-bridging-science-standards-and-innovation/"
     },
@@ -430,6 +430,26 @@
       "url": "https://aiforgood.itu.int/event/robotic-speed-networking-2026-day1/"
     },
     {
+      "id": "87518",
+      "title": "AI and democracy: Threats, safeguards, and the path forward",
+      "date": "2026-07-07",
+      "startTime": "09:30",
+      "endTime": "10:00",
+      "startsAt": "2026-07-07T09:30:00",
+      "endsAt": "2026-07-07T10:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Solutions stage",
+      "eventType": "Panel",
+      "eventTypes": [
+        "Panel"
+      ],
+      "topics": [],
+      "speakers": "Zhijing Jin, Stuart Russell, Bernhard Schölkopf, Evelyne Tauchnitz",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/ai-and-democracy-threats-safeguards-and-the-path-forward/"
+    },
+    {
       "id": "56477",
       "title": "Wearable robots: Developing user-centered exoskeletons and robotic prostheses",
       "date": "2026-07-07",
@@ -468,7 +488,7 @@
         "Workshop"
       ],
       "topics": [],
-      "speakers": "Houston Hou, Francis Gurry, Frederic Werner, Ben Nelson, Chandra Gunawan, Shafi Maahe, Jennifer Dang, Professor Johnny Huang, James Howe, Serge Stinckwich, Dr. Tan Eng Han, Kevin Ding, Yuyu Chen, Abbas Kazmi",
+      "speakers": "Houston Hou, Fabrizio Hochschild Drummond, Frederic Werner, Ben Nelson, Chandra Gunawan, Shafi Maahe, Jennifer Dang, Professor Johnny Huang, James Howe, Serge Stinckwich, Dr. Tan Eng Han, Kevin Ding, Yuyu Chen, Abbas Kazmi, Henry Peng, Diera Gala Paksi, Jinmeng Li",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/building-the-ecosystem-for-ai-native-talent/"
     },
@@ -677,7 +697,7 @@
       "topics": [
         "Robotics for Good"
       ],
-      "speakers": "Sujay John K, H.E. Dr. Takuo Imagawa, Bilel Jamoussi, H.E. Mr. Mondli Gungubele",
+      "speakers": "H.E. Dr. Takuo Imagawa, H.E. Mr. Mondli Gungubele, Bilel Jamoussi, Frederic Werner, Sujay John K",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/robotics-for-good-youth-challenge-grand-finale-2026-opening-ceremony/"
     },
@@ -912,7 +932,7 @@
       "topics": [
         "Frontier technologies"
       ],
-      "speakers": "Anthony Coleman, Micheal Matalatala, Pierre Sedi, Alain Goumou, Maria Stella Namyalo, H.E. Ms. Angellah Jasmine Mbelwa Kairuki, H.E. Mr. Raafat Hendy, Yvonne Baldwin Mushi, Mahmoud Badawi",
+      "speakers": "Mahmoud Badawi, Pierre Sedi, Alain Goumou, H.E. Ms. Angellah Jasmine Mbelwa Kairuki, H.E. Mr. Raafat Hendy, Yvonne Baldwin Mushi",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/how-africas-young-innovators-are-solving-real-world-challenges-with-ai/"
     },
@@ -999,7 +1019,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Sobhi Tawil, Claudia Romanelli, Mihnea Costoiu, Francesco Corsini, Alexandra Dimitrijevic, Patrick Jermann, Kate Barnes, Tereza Horejsová, Bakhtiyor Makhkamov, Il-Kyu Yoon, Christopher S. Yoo, Hong-Wei Wang, Mostafa Hashem Sherif, Juliane Schröter, Piotr Sankowski, Matthias Oschinski, Chantal Mveh, Innocent Macha, Juan Iván Martín Lataix, Jerry John Kponyo, Jude Dzevela Kong, Tanushree Kaushal, Eva Ibarrola, Michael Best, Rodrigo Baggio, Ludovico Biagi, Hao Qin, Dorothy Stanley, Balaraman Ravindran, Vijay Janapa Reddi, Em Lenartowicz, Cristian Axenie, Sher Verick, PeiChin Tay, Ann Elizabeth Borda, Francesca Larosa, Fatima Roumate, Abdurhman Albasir, Mehru Öztürk, Joana Santos, Alex Nomberto, Daniel Dobos, Luisa Olaya Hernández, Anna Abramova, Sarah Steinberg, Emily Edwards, Felix Kirchmeier, Supriya Bhuwalka, Bolor‑Erdene Battsengel, Laura Turkington, Tshilidzi Marwala, María Cristina Cárdenas Peralta, James Agajo, Ali Mansourian, Seizo Onoe, Ian F. Akyildiz, Mei Lin Fung, Virginia Dignum, Jérôme Duberry, Venkatesen Vijay Mauree, Bilel Jamoussi, Yannis Ioannidis, Celina Lee, Irakli Beridze",
+      "speakers": "Markus Schwertel, Sobhi Tawil, Claudia Romanelli, Mihnea Costoiu, Francesco Corsini, Alexandra Dimitrijevic, Patrick Jermann, Kate Barnes, Tereza Horejsová, Bakhtiyor Makhkamov, Il-Kyu Yoon, Christopher S. Yoo, Hong-Wei Wang, Mostafa Hashem Sherif, Juliane Schröter, Piotr Sankowski, Matthias Oschinski, Chantal Mveh, Innocent Macha, Juan Iván Martín Lataix, Jerry John Kponyo, Jude Dzevela Kong, Tanushree Kaushal, Eva Ibarrola, Loice K Gudukeya, Michael Best, Rodrigo Baggio, Ludovico Biagi, Hao Qin, Dorothy Stanley, Balaraman Ravindran, Vijay Janapa Reddi, Em Lenartowicz, Cristian Axenie, Sher Verick, PeiChin Tay, Ann Elizabeth Borda, Francesca Larosa, Abdurhman Albasir, Mehru Öztürk, Joana Santos, Alex Nomberto, Daniel Dobos, Luisa Olaya Hernández, Anna Abramova, Sarah Steinberg, Emily Edwards, Felix Kirchmeier, Supriya Bhuwalka, Bolor‑Erdene Battsengel, Laura Turkington, Tshilidzi Marwala, María Cristina Cárdenas Peralta, James Agajo, Ali Mansourian, Seizo Onoe, Ian F. Akyildiz, Mei Lin Fung, Virginia Dignum, Jérôme Duberry, Venkatesen Vijay Mauree, Bilel Jamoussi, Yannis Ioannidis, Celina Lee, Irakli Beridze",
       "invitationOnly": true,
       "url": null
     },
@@ -1019,7 +1039,7 @@
         "Lunch"
       ],
       "topics": [],
-      "speakers": "Parshant Dhand",
+      "speakers": "Parshant Dhand, Marc Spiotta, Dino Cataldo Dell’Accio",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/how-ai-servicenow-powers-unjspf-for-250k-beneficiaries/"
     },
@@ -1177,9 +1197,9 @@
       "title": "AI for manufacturing: Pharmaceutical industry workshop on innovation, applications and standards",
       "date": "2026-07-07",
       "startTime": "13:40",
-      "endTime": "16:32",
+      "endTime": "16:30",
       "startsAt": "2026-07-07T13:40:00",
-      "endsAt": "2026-07-07T16:32:00",
+      "endsAt": "2026-07-07T16:30:00",
       "isMultiDay": false,
       "endDate": null,
       "location": "Room 2",
@@ -1192,7 +1212,7 @@
       ],
       "speakers": "Dennis Chornenky, Andrew Whytock, TSAI-TA LAI, Jicui Dong, Dong Min, Anne Stake, Pascal Mayer, Vaibhava Lakshmi Ravideshik, Yu Zhao, Alex Aliper, YU Xiaohui, Simão Campos, Seizo Onoe, Noah Luo",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/ai-for-manufacturing-pharmaceutical-industry-workshop-on-innovation-applications-and-standards/"
     },
     {
       "id": "56496",
@@ -2019,7 +2039,7 @@
       "topics": [
         "AI creativity & culture"
       ],
-      "speakers": "Jakob Pörschmann, Anna Greil, Jessica Minh Anh, Matthew Drinkwater, Elias Stahl",
+      "speakers": "Jakob Pörschmann, Anna Greil, Matthew Drinkwater, Elias Stahl",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-and-fashion-who-wins-in-the-new-creative-economy/"
     },
@@ -2267,7 +2287,7 @@
       "topics": [
         "Quantum for Good"
       ],
-      "speakers": "Bruno Huttner, Anna Beata Kalisz Hedegaard, Harry Kumar, Mark Carney, Alessandra Jabłonowska, Hao Qin, Kai and Katia, Fernando Guerra Alves, H.E. Dr. Mohamed Al Kuwaiti, Mekena McGrew, Wiktor Mazin, Emily Edwards, Victoria Kumaran, Gregoire Ribordy, Cierra Lunde Choucair, Tamás Varga, Elisa Torres, David Cuckow, Gillian Makamara, Erica Moret, James A. Grieve, Wissal Sidi El Khir",
+      "speakers": "Bruno Huttner, Anna Beata Kalisz Hedegaard, Harry Kumar, Mark Carney, Alessandra Jabłonowska, Hao Qin, Kai and Katia, Fernando Guerra Alves, H.E. Dr. Mohamed Al Kuwaiti, Mekena McGrew, Wiktor Mazin, Emily Edwards, Victoria Kumaran, Gregoire Ribordy, Cierra Lunde Choucair, Tamás Varga, Elisa Torres, David Cuckow, Gillian Makamara, Erica Moret, James A. Grieve, Wissal Sidi El Khir, Rebecca Krauthamer",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/quantum-for-good-industry-leadership-innovation-and-real-world-impact-2/"
     },
@@ -2686,7 +2706,7 @@
         "Workshop"
       ],
       "topics": [],
-      "speakers": "Angel Gonzalez Sanz, Claudia Romanelli, Hao Liu, Wernhard Berger, Dominic Gorecky, H.E. Mr. Matthew Wilson, Jason Slater, Axel Callabed, Amandeep Singh Gill, Ciyong Zou, Celina Lee, John Kamara",
+      "speakers": "Angel Gonzalez Sanz, Claudia Romanelli, Hao Liu, Wernhard Berger, Dominic Gorecky, H.E. Mr. Matthew Wilson, Jason Slater, Axel Callabed, Quintin Chou-Lambert, Ciyong Zou, Celina Lee, John Kamara",
       "invitationOnly": false,
       "url": null
     },
@@ -2708,7 +2728,7 @@
       "topics": [],
       "speakers": "Syed Munir Khasru, Mehdi Snene, Giulia Neaher, Nadia Magnenat Thalmann",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/ai-and-hardware-the-rising-cost-of-digital-entry-and-widening-digital-divide/"
     },
     {
       "id": "72360",
@@ -3117,7 +3137,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": null,
+      "speakers": "H.E. Mr. Paul Kagame, Marc Benioff, Doreen Bogdan-Martin, H.E. Ms. Josephine Teo, Brad Smith, Father Eric Salobir",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/scaling-ai-for-good/"
     },
@@ -3179,7 +3199,7 @@
         "Lunch"
       ],
       "topics": [],
-      "speakers": "Stuart Campo, Robert Lisinge, Michael Camilleri, Suzanne Connolly, Sonja Leighton-Kone, Chhaya Kapilashrami, Benjamin Durieux, Pablo Salazar Canelos, Arnhild Spence, Caroline Tissot, George Wachira, Amanda Khozi Mukwashi, Sylvain St-Pierre, Chris Sharrock, Beate Andrees, Siva Somasundram, Khaled El-Enany, Sima Sami Bahous, Anacláudia Rossbach, Enrica Porcari, Annalena Baerbock, Giacomo Persi Paoli, Yasushi Masaki, H.E. Mr. Rein Tammsaar, H.E. Ms. Egriselda López, Magdalena Sepúlveda Carmona, Ayman El-Sherbiny, Chaouki Kasmi, Thomas Bousios, Kaan Çetintürk, Miguel Panadero, Marco Llinás, James Grabert, Tatiana Molcean, Sangbu Kim, Michelle Gyles-McDonnough, Celeste Saulo, Emmanuelle Ganne, Jingbo Huang, Cosmas Luckyson Zavazava, Julius (J.N.) Hill , Loretta Hieber Girardet, Dino Cataldo Dell’Accio, Sameer Chauhan, Tomas Lamanauskas, Pamela Coke-Hamilton, Dejan Jakovljevic, Ulrike Till, Natalia Bayona, Amandeep Singh Gill, Seizo Onoe, Ciyong Zou, Doreen Bogdan-Martin, Robert Opp, Golestan Sally Radwan, Muralee Thummarukudy, Bilel Jamoussi, Irakli Beridze",
+      "speakers": "Bathsheba Crocker, Stuart Campo, Robert Lisinge, Michael Camilleri, Suzanne Connolly, Sonja Leighton-Kone, Chhaya Kapilashrami, Benjamin Durieux, Pablo Salazar Canelos, Arnhild Spence, Caroline Tissot, George Wachira, Amanda Khozi Mukwashi, Sylvain St-Pierre, Chris Sharrock, Beate Andrees, Siva Somasundram, Khaled El-Enany, Sima Sami Bahous, Anacláudia Rossbach, Enrica Porcari, Annalena Baerbock, Giacomo Persi Paoli, Yasushi Masaki, H.E. Mr. Rein Tammsaar, H.E. Ms. Egriselda López, Magdalena Sepúlveda Carmona, Ayman El-Sherbiny, Chaouki Kasmi, Thomas Bousios, Kaan Çetintürk, Miguel Panadero, Marco Llinás, James Grabert, Tatiana Molcean, Sangbu Kim, Michelle Gyles-McDonnough, Celeste Saulo, Emmanuelle Ganne, Jingbo Huang, Cosmas Luckyson Zavazava, Julius (J.N.) Hill , Loretta Hieber Girardet, Dino Cataldo Dell’Accio, Sameer Chauhan, Tomas Lamanauskas, Pamela Coke-Hamilton, Dejan Jakovljevic, Ulrike Till, Natalia Bayona, Amandeep Singh Gill, Seizo Onoe, Ciyong Zou, Doreen Bogdan-Martin, Robert Opp, Golestan Sally Radwan, Muralee Thummarukudy, Bilel Jamoussi, Irakli Beridze",
       "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/un-leaders-roundtable-lunch-2026/"
     },
@@ -3871,7 +3891,7 @@
         "Roundtable"
       ],
       "topics": [],
-      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi, Chantal Mveh, Nkundwe Mwasaga, Atul Sinha, Isaac Boateng, Manal Al Afad, Tomas Lamanauskas, Prof Dr Lourino Chemane",
+      "speakers": "Aziz Mukhitdinov, H.E. Ms. Lavina Ramkissoon, Ian Mutamiri, Anna Abramova, H.E. Mr. Majed Sultan Al Mesmar, Seizo Onoe, Venkatesen Vijay Mauree, Bilel Jamoussi, Chantal Mveh, Nkundwe Mwasaga, Atul Sinha, Isaac Boateng, Manal Al Afad, Tomas Lamanauskas, Prof Dr Lourino Chemane, H.E. Mr. Diego Belevan",
       "invitationOnly": false,
       "url": null
     },
@@ -4373,7 +4393,7 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": "Sulyna Abdullah, Dr. Artur Kluz, Bishop Paul Tighe, Paolo Carozza, H.E. Mr. Ettore Balestrero",
+      "speakers": "Sulyna Abdullah, Artur Kluz, Bishop Paul Tighe, Paolo Carozza, H.E. Mr. Ettore Balestrero",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/high-level-conversation-on-pope-leo-xivs-first-encyclical-letter-magnifica-humanitas/"
     },
@@ -4522,7 +4542,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Mario Tavares Moyron, Nick Adam, Anthony Carmoy, Ward Duchamps, Zhiyuan HU, Henk Birkholz, Li Li, William Carter, Mark Keating, Samuel Waymouth, Maximilian Nickel, Pam Dixon, Andrey Belevtsev, Yuliya Shlychkova, Laurent Beaumois, Guangming Liu, Yuntao Wang, Debora Comparin, Naying Hu, Arnaud Taddei, Seizo Onoe, Amir Banifatemi",
+      "speakers": "Mario Tavares Moyron, Nick Adam, Anthony Carmoy, Ward Duchamps, Zhiyuan HU, Henk Birkholz, Li Li, William Carter, Mark Keating, Samuel Waymouth, Maximilian Nickel, Pam Dixon, Andrey Belevtsev, Yuliya Shlychkova, Laurent Beaumois, Guangming Liu, Yuntao Wang, Debora Comparin, Naying Hu, Arnaud Taddei, Seizo Onoe, Amir Banifatemi, Xuan Phuc",
       "invitationOnly": false,
       "url": null
     },
@@ -5130,7 +5150,7 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": "Apoorva Bose, Alex Bernasconi, Nakul Prasad, Grey Nearing",
+      "speakers": "Apoorva Bose, Alex Bernasconi, Nakul Prasad, Grey Nearing, Martin Bailey",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-water-making-every-drop-count/"
     },
@@ -5552,7 +5572,7 @@
         "AI for planet",
         "Impact & innovation"
       ],
-      "speakers": "David Rae, Colm Devine, Tom Walker",
+      "speakers": "David Rae, Colm Devine, Tom Walker, Mirakhmad Aliakbarov, Robert Keus",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-risk-to-resilience-accelerating-ai-solutions-for-climate-driven-human-impact/"
     },
@@ -5680,9 +5700,9 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": "Max Lamesch, Marco Chini, Jorge Fernandes",
+      "speakers": "Jeanne Pietschmann, Marco Chini, Jorge Fernandes",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/from-lab-to-field-ai-partnership-for-humanitarian-actions/"
+      "url": null
     },
     {
       "id": "74661",
@@ -6162,7 +6182,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Kathleen Ziemann, Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Fatima Roumate, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, will.i.am, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, H.E. Dr. Takuo Imagawa, Bolor‑Erdene Battsengel, Amanda Brock, María Cristina Cárdenas Peralta, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze, Gerardo Franco",
+      "speakers": "Kathleen Ziemann, Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, will.i.am, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, H.E. Dr. Takuo Imagawa, Bolor‑Erdene Battsengel, Amanda Brock, María Cristina Cárdenas Peralta, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
       "invitationOnly": true,
       "url": null
     },
@@ -6555,7 +6575,7 @@
       ],
       "speakers": "Jamal Alshanfari, Joyce Nabende, Arijit Patra, Sarah Aboerjaib, Natalie Raffoul, Aishwarya Karnataki, Nancy Pignataro, Dalila Hamou, Alain Labrique, Xiao Liu, Marc LeCoultre, ​​​​​​​​​​​​Sameer Pujari, Bilel Jamoussi, Guy Parsons, Rose Nakasi, Habiba Mizouni, Aline Conchon",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/ai-for-health-scaling-impact-through-innovation-inclusion-and-investment/"
     },
     {
       "id": "52629",
@@ -6598,7 +6618,7 @@
         "AI for food & agriculture",
         "International AI Standards"
       ],
-      "speakers": "Diva Avaya Sharma, Charles Spillane, Caroline Gaju, John Colmey, Jan Christian Redlich, Simon Winter, Magan Naidoo, Girmaw Abebe Tadesse, Sebastian Bosse, Ezekiel Brooks, Michael Tsan, Seizo Onoe, Benjamin Questier, Indran Naidoo, Jennifer Selby",
+      "speakers": "Diva Avaya Sharma, Charles Spillane, Caroline Gaju, John Colmey, Jan Christian Redlich, Simon Winter, Magan Naidoo, Girmaw Abebe Tadesse, Sebastian Bosse, Ezekiel Brooks, Michael Tsan, Seizo Onoe, Benjamin Questier, Indran Naidoo",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-on-the-menu-transforming-digital-food-systems/"
     },
@@ -6832,7 +6852,7 @@
     },
     {
       "id": "72585",
-      "title": "TACTICA",
+      "title": "AI Sovereignty: A strategic asset",
       "date": "2026-07-10",
       "startTime": "10:20",
       "endTime": "10:50",
@@ -7315,6 +7335,26 @@
       "speakers": "Maria Ressa, Ann E. Greenberg, Jaden Xie, Alessandra Sala",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-media-and-the-information-integrity-challenge/"
+    },
+    {
+      "id": "88092",
+      "title": "How AI is accelerating robotic space exploration",
+      "date": "2026-07-10",
+      "startTime": "14:00",
+      "endTime": "14:15",
+      "startsAt": "2026-07-10T14:00:00",
+      "endsAt": "2026-07-10T14:15:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Solutions stage",
+      "eventType": "Keynote",
+      "eventTypes": [
+        "Keynote"
+      ],
+      "topics": [],
+      "speakers": "Vandi Verma, Vandi Verma",
+      "invitationOnly": false,
+      "url": null
     },
     {
       "id": "64672",
