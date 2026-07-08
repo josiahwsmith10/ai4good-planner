@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-07T21:46:46.636Z",
+    "fetchedAt": "2026-07-08T06:40:03.663Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -1912,28 +1912,6 @@
       "url": "https://aiforgood.itu.int/event/ai-for-opportunity-innovating-the-future-of-work/"
     },
     {
-      "id": "67970",
-      "title": "Tech leadership in the age of AI",
-      "date": "2026-07-07",
-      "startTime": "16:00",
-      "endTime": "16:30",
-      "startsAt": "2026-07-07T16:00:00",
-      "endsAt": "2026-07-07T16:30:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Solutions stage",
-      "eventType": "Panel",
-      "eventTypes": [
-        "Panel"
-      ],
-      "topics": [
-        "Impact & innovation"
-      ],
-      "speakers": "Werner Vogels, Vijay Solanky, Petya Kangalova, Ameesh Kapoor",
-      "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/tech-leadership-in-the-age-of-ai-2/"
-    },
-    {
       "id": "72283",
       "title": "Digital bodily autonomy in the age of AI",
       "date": "2026-07-07",
@@ -3141,6 +3119,28 @@
       "speakers": "H.E. Mr. Paul Kagame, Marc Benioff, Doreen Bogdan-Martin, H.E. Ms. Josephine Teo, Brad Smith, Father Eric Salobir",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/scaling-ai-for-good/"
+    },
+    {
+      "id": "67970",
+      "title": "Tech leadership in the age of AI",
+      "date": "2026-07-08",
+      "startTime": "12:30",
+      "endTime": "13:00",
+      "startsAt": "2026-07-08T12:30:00",
+      "endsAt": "2026-07-08T13:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Frontier stage",
+      "eventType": "Panel",
+      "eventTypes": [
+        "Panel"
+      ],
+      "topics": [
+        "Impact & innovation"
+      ],
+      "speakers": "Vijay Solanky, Petya Kangalova, Ameesh Kapoor",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/tech-leadership-in-the-age-of-ai-2/"
     },
     {
       "id": "78925",
