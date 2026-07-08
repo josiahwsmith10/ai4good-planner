@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-08T10:31:32.225Z",
+    "fetchedAt": "2026-07-08T14:42:38.540Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -3555,7 +3555,7 @@
       "topics": [],
       "speakers": "Iren Neeranzona Khan, Lorenzo Impellizzeri, Nour Riz, Sarah Shafiq, Leanda Barrington-Leach, Zachary Stein, Wafa Ben Hassine, Henrietta Ridley, Salma Abbasi, Marija Manojlovic",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/designing-ai-for-teenagers/"
     },
     {
       "id": "64984",
@@ -4581,7 +4581,7 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Aline Matta, Karen Lassmann, Tatiana Roque, H.E. Dr. Yasir Al Naqbi, Peter Sailer, Judit Kozenkow, Antonio Jara, Marco Camisani Calzolari, Anita Perera, Christina Kitsos, Andras Szorenyi, Gamze Hakli Geray, H.E. Ms. Angellah Jasmine Mbelwa Kairuki, H.E. Mr. William Kabogo Gitau, Kamelia Kemileva, Paola Cecchi Di Meglio, Martin Brynskov, Dino Cataldo Dell’Accio, Sameer Chauhan, Seizo Onoe, Okan Geray, Cristina Bueti, Hyoung Jun Kim",
+      "speakers": "Aline Matta, Karen Lassmann, Tatiana Roque, H.E. Dr. Yasir Al Naqbi, Peter Sailer, Judit Kozenkow, Antonio Jara, Marco Camisani Calzolari, Anita Perera, Christina Kitsos, Gamze Hakli Geray, H.E. Ms. Angellah Jasmine Mbelwa Kairuki, H.E. Mr. William Kabogo Gitau, Kamelia Kemileva, Paola Cecchi Di Meglio, Martin Brynskov, Dino Cataldo Dell’Accio, Sameer Chauhan, Seizo Onoe, Okan Geray, Cristina Bueti, Hyoung Jun Kim",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/cities-that-think-and-act-agentic-ai-physical-ai-and-the-citiverse/"
     },
@@ -6505,7 +6505,7 @@
       "topics": [],
       "speakers": "Doreen Bogdan-Martin, Bernardo Mariano Junior, Khuloud Odeh, Shirin Hamid, Qahir Dhanani, Talea Von Lupin, Timothy Grosser, Sylvain St-Pierre, Robert Opp, Karl Kalejs, Steven Gemmel, Cristina Segal, Enrica Porcari, Jean-Michel Baudoin, Amy Jean Doherty, Marietta Muwanga-Ssevume, Jordan Robert, Alessandra Furtado, Aline Weinsheimer, Sameer Chauhan, Kaan Çetintürk, Ana Paula Nishio de Sousa, Michael Tsan, Tomas Lamanauskas, Jonas Pasquier",
       "invitationOnly": true,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/un-cio-ai-forum-operationalizing-ai-across-the-united-nations-system/"
     },
     {
       "id": "69846",
@@ -7101,7 +7101,7 @@
     },
     {
       "id": "74626",
-      "title": "Will We Make It?",
+      "title": "The Humanity Dilemma: A Species-Level Event",
       "date": "2026-07-10",
       "startTime": "11:50",
       "endTime": "12:30",
