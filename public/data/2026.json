@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-08T17:53:02.889Z",
+    "fetchedAt": "2026-07-08T19:56:49.645Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -4191,26 +4191,6 @@
       "url": "https://aiforgood.itu.int/event/defining-fair-establishing-the-rules-of-engagement-in-ai/"
     },
     {
-      "id": "63680",
-      "title": "The 021 Science Foundation Model: Connecting science fields to unlock new discoveries",
-      "date": "2026-07-08",
-      "startTime": "16:30",
-      "endTime": "16:45",
-      "startsAt": "2026-07-08T16:30:00",
-      "endsAt": "2026-07-08T16:45:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Frontier stage",
-      "eventType": "",
-      "eventTypes": [],
-      "topics": [
-        "Frontier technologies"
-      ],
-      "speakers": "Wang Jian",
-      "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/the-021-science-foundation-model-connecting-science-fields-to-unlock-new-discoveries/"
-    },
-    {
       "id": "65828",
       "title": "Strengthening food systems resilience with AI",
       "date": "2026-07-08",
@@ -5360,6 +5340,26 @@
       "url": "https://aiforgood.itu.int/event/fundamentals-of-computer-vision-with-green-screen-3/"
     },
     {
+      "id": "63680",
+      "title": "The 021 Science Foundation Model: Connecting science fields to unlock new discoveries",
+      "date": "2026-07-09",
+      "startTime": "12:20",
+      "endTime": "12:30",
+      "startsAt": "2026-07-09T12:20:00",
+      "endsAt": "2026-07-09T12:30:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Centre stage",
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "Wang Jian",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/the-021-science-foundation-model-connecting-science-fields-to-unlock-new-discoveries/"
+    },
+    {
       "id": "61681",
       "title": "AI dependency: Building resilience before failures cascade",
       "date": "2026-07-09",
@@ -6199,7 +6199,7 @@
       "topics": [
         "AI skills & education"
       ],
-      "speakers": "Kathleen Ziemann, Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, will.i.am, Alex Nomberto, Kushal Sagar Prakash, Gillian Hinde, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, H.E. Dr. Takuo Imagawa, Bolor Erdene Battsengel, Amanda Brock, María Cristina Cárdenas Peralta, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze",
+      "speakers": "Kathleen Ziemann, Christian Pennotti, Lily Fox, HadiShahriar Shahhoseini, Jasmine Hasmatali, Pelayo Alvarez, Angela Conway, Gerardo Franco, Tereza Horejsová, Il-Kyu Yoon, Juan Iván Martín Lataix, Rodrigo Baggio, Em Lenartowicz, Cristian Axenie, Sher Verick, Tom Kaye, PeiChin Tay, Francesca Larosa, Mehru Öztürk, Joana Santos, Sharad Arora, Shivagami Gugan, will.i.am, Alex Nomberto, Kushal Sagar Prakash, Romain Leroy-Castillo, John Paul Danaee, Joon Baek, Jumpei Takami, Yi Chen, Anna Abramova, Salma Abbasi, Felix Kirchmeier, H.E. Dr. Takuo Imagawa, Bolor Erdene Battsengel, Amanda Brock, María Cristina Cárdenas Peralta, Sasha Rubel, Doreen Bogdan-Martin, Robert Opp, Jérôme Duberry, Bilel Jamoussi, Irakli Beridze, Laura Turkington",
       "invitationOnly": true,
       "url": null
     },
