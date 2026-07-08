@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-08T14:42:38.540Z",
+    "fetchedAt": "2026-07-08T17:53:02.889Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -4770,7 +4770,7 @@
         "International AI Standards",
         "Quantum for Good"
       ],
-      "speakers": "Tracey Forrest, Romi Sumaria, Dylan Barry, Kelly Richdale, Alessandro Curioni",
+      "speakers": "Tracey Forrest, Romi Sumaria, Connie Kuang, Kelly Richdale, Alessandro Curioni",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/quantum-and-ai-unlocking-new-frontiers-through-convergence/"
     },
@@ -5524,7 +5524,7 @@
       "topics": [
         "Frontier technologies"
       ],
-      "speakers": "Maximilian Nickel, Natasha Crampton, Alissa Starzak, Lacina Koné, Bilel Jamoussi",
+      "speakers": "Maximilian Nickel, Natasha Crampton, Alissa Starzak, Lacina Koné, H.E. Dr. Mohamed Al Kuwaiti, Bilel Jamoussi",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/trusted-ai-agents-securing-the-next-layer-of-intelligence/"
     },
@@ -7104,9 +7104,9 @@
       "title": "The Humanity Dilemma: A Species-Level Event",
       "date": "2026-07-10",
       "startTime": "11:50",
-      "endTime": "12:30",
+      "endTime": "12:40",
       "startsAt": "2026-07-10T11:50:00",
-      "endsAt": "2026-07-10T12:30:00",
+      "endsAt": "2026-07-10T12:40:00",
       "isMultiDay": false,
       "endDate": null,
       "location": "Centre stage",
@@ -7115,7 +7115,7 @@
       "topics": [
         "AI creativity & culture"
       ],
-      "speakers": "Joy Mauthe Raskin, Aza Raskin, Tristan Harris",
+      "speakers": "Joy Mauthe Raskin, Aza Raskin, Tristan Harris, Andrei Matorin",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/will-we-make-it/"
     },
