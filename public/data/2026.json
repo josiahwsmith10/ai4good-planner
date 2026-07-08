@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-08T06:40:03.663Z",
+    "fetchedAt": "2026-07-08T10:31:32.225Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -2141,28 +2141,6 @@
       "url": "https://aiforgood.itu.int/event/google-cloud-networking-breakfast-ai-for-global-impact/"
     },
     {
-      "id": "66470",
-      "title": "From ambition to impact: Industrial AI for sustainable impact",
-      "date": "2026-07-08",
-      "startTime": "08:00",
-      "endTime": "09:15",
-      "startsAt": "2026-07-08T08:00:00",
-      "endsAt": "2026-07-08T09:15:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Leaders lounge",
-      "eventType": "Breakfast",
-      "eventTypes": [
-        "Breakfast"
-      ],
-      "topics": [
-        "AI for planet"
-      ],
-      "speakers": "Jochen Gross",
-      "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/from-ambition-to-impact-industrial-ai-for-sustainable-impact/"
-    },
-    {
       "id": "55162",
       "title": "Startup accelerator programme",
       "date": "2026-07-08",
@@ -2459,7 +2437,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Maikel Wilms, Nan Li Collins, Alex Wong, Melike Yetken Krilla, H.E. Dr. Bosun Tijani, Antonio Garcia Zaballos",
+      "speakers": "H.E. Dr. Bosun Tijani, Antonio Garcia Zaballos, Melike Yetken Krilla, Nan Li Collins, Maikel Wilms, Alex Wong",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/financing-ai-enabling-digital-infrastructure-in-emerging-markets/"
     },
@@ -3014,6 +2992,26 @@
       "url": "https://aiforgood.itu.int/event/leaders-fireside-chat/"
     },
     {
+      "id": "66470",
+      "title": "From ambition to impact: Industrial AI for sustainable impact",
+      "date": "2026-07-08",
+      "startTime": "12:00",
+      "endTime": "13:15",
+      "startsAt": "2026-07-08T12:00:00",
+      "endsAt": "2026-07-08T13:15:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Leaders lounge",
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [
+        "AI for planet"
+      ],
+      "speakers": "Jochen Gross",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/from-ambition-to-impact-industrial-ai-for-sustainable-impact/"
+    },
+    {
       "id": "54790",
       "title": "AI and information accessibility: Bridging communication gaps for all",
       "date": "2026-07-08",
@@ -3388,7 +3386,7 @@
         "Keynote"
       ],
       "topics": [],
-      "speakers": "Åsa Regnér",
+      "speakers": "Mariya Gabriel",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/welcome-remarks-3/"
     },
@@ -3579,7 +3577,7 @@
       ],
       "speakers": "Howie Wachtel, Calista Redmond, Julie Teigland, Magan Naidoo",
       "invitationOnly": false,
-      "url": null
+      "url": "https://aiforgood.itu.int/event/trust-isnt-coded-its-built-through-ecosystems/"
     },
     {
       "id": "74436",
@@ -3734,9 +3732,9 @@
       "title": "AI foundation model evaluation and standards",
       "date": "2026-07-08",
       "startTime": "14:30",
-      "endTime": "17:40",
+      "endTime": "18:00",
       "startsAt": "2026-07-08T14:30:00",
-      "endsAt": "2026-07-08T17:40:00",
+      "endsAt": "2026-07-08T18:00:00",
       "isMultiDay": false,
       "endDate": null,
       "location": "Room V",
@@ -3747,9 +3745,9 @@
       "topics": [
         "International AI Standards"
       ],
-      "speakers": "Chang Xin, Nicolas Miailhe, Yonghua Lin, Maxime Stauffer, Kangchan Lee, Peter Danenberg, Yuntao Wang, Shivagami Gugan, Latif Ladid, Wang Jian, Arnaud Taddei, Wei Kai, Gilles Thonet, YU Xiaohui, Li Tian, Noah Luo, Bilel Jamoussi",
+      "speakers": "Chang Xin, Nicolas Miailhe, Yonghua Lin, Maxime Stauffer, Kangchan Lee, Peter Danenberg, Yuntao Wang, Shivagami Gugan, Latif Ladid, Wang Jian, Arnaud Taddei, Wei Kai, Gilles Thonet, YU Xiaohui, Li Tian, Noah Luo, Bilel Jamoussi, Stéphie Herlin, Adrianna Tan",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/ai-foundation-model-evaluation-and-standards/"
+      "url": null
     },
     {
       "id": "69117",
@@ -4292,7 +4290,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Anne-Laure Héritier, HRH Princess Lamia Bint Majed Saud AlSaud, Cristina Tanasescu, Amy Jean Doherty, Anupama Bhute, CareNX Innovations, DIVERSSITY , Iriscience ‎, Brandon Andrews, Pamela Coke-Hamilton, Werner Vogels, Natasha Crampton",
+      "speakers": "Anne-Laure Héritier, HRH Princess Lamia Bint Majed Saud AlSaud, Dr. Kavita Kalyankar, Amy Jean Doherty, Anupama Bhute, CareNX Innovations, DIVERSSITY , Nimbora ‎, Brandon Andrews, Pamela Coke-Hamilton, Werner Vogels, Natasha Crampton",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/innovation-factory-pitching-competition-women-entrepreneurs-shaping-the-future-2026/"
     },
@@ -4352,7 +4350,7 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": null,
+      "speakers": "YU Xiaohui, Venkatesen Vijay Mauree",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/brain-computer-interface-technologies-for-good-coupled-with-standards-cooperation/"
     },
@@ -6703,7 +6701,7 @@
       ],
       "speakers": "Natasha Powell, Stephanie LaBoo, Michelle Warren, Nia Jetter",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/learn-to-speak-ai-4/"
+      "url": "https://aiforgood.itu.int/?post_type=event&p=66068"
     },
     {
       "id": "73890",
@@ -7204,7 +7202,7 @@
       ],
       "speakers": "Natasha Powell, Stephanie LaBoo, Michelle Warren, Nia Jetter",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/fundamentals-of-computer-vision-with-green-screen-4/"
+      "url": "https://aiforgood.itu.int/?post_type=event&p=66072"
     },
     {
       "id": "71082",
