@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-09T07:56:05.169Z",
+    "fetchedAt": "2026-07-09T11:20:25.023Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -66,7 +66,7 @@
   "events": [
     {
       "id": "78732",
-      "title": "AWS AI league — A competition-based AI tournament for social impact",
+      "title": "[Invitation only] AWS AI league — A competition-based AI tournament for social impact",
       "date": "2026-07-07",
       "startTime": "09:00",
       "endTime": "17:00",
@@ -4458,7 +4458,7 @@
     },
     {
       "id": "64476",
-      "title": "Startup accelerator programme",
+      "title": "[Invitation only] Startup accelerator programme",
       "date": "2026-07-09",
       "startTime": "09:00",
       "endTime": "17:30",
@@ -4585,7 +4585,7 @@
     },
     {
       "id": "72551",
-      "title": "AI tabletop exercise for decision-makers",
+      "title": "[Invitation only] AI tabletop exercise for decision-makers",
       "date": "2026-07-09",
       "startTime": "09:00",
       "endTime": "11:30",
@@ -4603,7 +4603,7 @@
     },
     {
       "id": "54519",
-      "title": "AI for human resources: Practical applications across the HR lifecycle",
+      "title": "[Invitation only] AI for human resources: Practical applications across the HR lifecycle",
       "date": "2026-07-09",
       "startTime": "09:00",
       "endTime": "17:15",
@@ -5259,7 +5259,7 @@
     },
     {
       "id": "76884",
-      "title": "From Geneva to New York: A high-level AI policy lunch",
+      "title": "[Invitation only] From Geneva to New York: A high-level AI policy lunch",
       "date": "2026-07-09",
       "startTime": "12:00",
       "endTime": "14:00",
@@ -5361,7 +5361,7 @@
     },
     {
       "id": "61681",
-      "title": "AI dependency: Building resilience before failures cascade",
+      "title": "[Invitation only] AI dependency: Building resilience before failures cascade",
       "date": "2026-07-09",
       "startTime": "12:30",
       "endTime": "14:00",
@@ -5452,7 +5452,7 @@
       "endsAt": "2026-07-09T16:15:00",
       "isMultiDay": false,
       "endDate": null,
-      "location": "Room S",
+      "location": "Room T",
       "eventType": "Workshop",
       "eventTypes": [
         "Workshop"
@@ -5645,7 +5645,7 @@
       "endsAt": "2026-07-09T17:15:00",
       "isMultiDay": false,
       "endDate": null,
-      "location": "Room T",
+      "location": "Room S",
       "eventType": "Workshop",
       "eventTypes": [
         "Workshop"
@@ -5675,7 +5675,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Seizo Onoe, Guy Pessach, Jianping Xiang, Kasiet Kachaganova, Lauri Rechardt, Amelle Benabdellaziz, Ulrike Till",
+      "speakers": "Seizo Onoe, Guy Pessach, Jianping Xiang, Kasiet Kachaganova, Lauri Rechardt, Amelle Benabdellaziz, Ulrike Till, Guillem Martínez Roura",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-idea-to-impact-ip-strategies-for-ai-entrepreneurs/"
     },
@@ -5906,7 +5906,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Seizo Onoe, Anna Marks, Jane Hanson, Ebtesam Almazrouei",
+      "speakers": "Seizo Onoe, will.i.am, Anna Marks, Jane Hanson, Ebtesam Almazrouei",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-good-innovation-factory-grand-finale-2026/"
     },
@@ -6185,7 +6185,7 @@
     },
     {
       "id": "55438",
-      "title": "AI Skills Coalition partner annual meeting",
+      "title": "[Invitation only] AI Skills Coalition partner annual meeting",
       "date": "2026-07-09",
       "startTime": "16:00",
       "endTime": "17:30",
@@ -6303,7 +6303,7 @@
     },
     {
       "id": "70126",
-      "title": "Lessons and cooperation across AI policy initiatives",
+      "title": "[Invitation only] Lessons and cooperation across AI policy initiatives",
       "date": "2026-07-09",
       "startTime": "16:30",
       "endTime": "18:00",
@@ -6467,7 +6467,7 @@
     },
     {
       "id": "55163",
-      "title": "AI for Good ambassadors’ breakfast: Frontier tech briefing",
+      "title": "[Invitation only] AI for Good ambassadors’ breakfast: Frontier tech briefing",
       "date": "2026-07-10",
       "startTime": "07:45",
       "endTime": "09:00",
@@ -6489,7 +6489,7 @@
     },
     {
       "id": "54518",
-      "title": "UN CIO AI forum: Operationalizing AI across the United Nations system",
+      "title": "[Invitation only] UN CIO AI forum: Operationalizing AI across the United Nations system",
       "date": "2026-07-10",
       "startTime": "08:15",
       "endTime": "16:45",
@@ -6509,7 +6509,7 @@
     },
     {
       "id": "69846",
-      "title": "Impact initiative breakfast meeting",
+      "title": "[Invitation only] Impact initiative breakfast meeting",
       "date": "2026-07-10",
       "startTime": "08:30",
       "endTime": "09:30",
@@ -6529,7 +6529,7 @@
     },
     {
       "id": "64502",
-      "title": "Startup accelerator programme",
+      "title": "[Invitation only] Startup accelerator programme",
       "date": "2026-07-10",
       "startTime": "09:00",
       "endTime": "17:30",
@@ -7008,7 +7008,7 @@
       "topics": [
         "AI infrastructure"
       ],
-      "speakers": "Calista Redmond, Peter Danenberg, Katharina Frey, Bilel Jamoussi",
+      "speakers": "Calista Redmond, Peter Danenberg, Katharina Frey, Bilel Jamoussi, H.E. Ms. Lavina Ramkissoon",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/bridging-the-ai-infrastructure-divide/"
     },
@@ -7228,7 +7228,7 @@
     },
     {
       "id": "66021",
-      "title": "The impact of AI on developing young minds: A policy roadmap to prioritizing children’s needs",
+      "title": "[Invitation only] The impact of AI on developing young minds: A policy roadmap to prioritizing children’s needs",
       "date": "2026-07-10",
       "startTime": "12:30",
       "endTime": "14:00",
@@ -7248,7 +7248,7 @@
     },
     {
       "id": "68995",
-      "title": "Media literacy in the age of AI",
+      "title": "[Invitation only] Media literacy in the age of AI",
       "date": "2026-07-10",
       "startTime": "12:30",
       "endTime": "14:00",
