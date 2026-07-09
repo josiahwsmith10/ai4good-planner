@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-09T11:20:25.023Z",
+    "fetchedAt": "2026-07-09T15:35:32.237Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -5906,7 +5906,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Seizo Onoe, will.i.am, Anna Marks, Jane Hanson, Ebtesam Almazrouei",
+      "speakers": "Shantanu Pathak, Doto ‎, Jane Hanson, Victor Daniyan, Manoj Sanker, Nearpays ‎, Nemocare ‎, will.i.am, Anna Marks, Seizo Onoe, Ebtesam Almazrouei",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-good-innovation-factory-grand-finale-2026/"
     },
@@ -6946,7 +6946,7 @@
       "eventType": "",
       "eventTypes": [],
       "topics": [],
-      "speakers": "David Manset, Francois Grey, Gaëlle Foucault",
+      "speakers": "David Manset, Francois Grey, Gaëlle Foucault, Sharada Mohanty, Sharada Mohanty",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/from-silicon-to-sovereignty-open-hardware-for-the-next-generation-of-open-source-ai/"
     },
