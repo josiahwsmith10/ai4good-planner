@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-09T20:06:05.802Z",
+    "fetchedAt": "2026-07-09T21:47:44.123Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 356,
+    "eventCount": 359,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -287,8 +287,8 @@
       "endTime": "17:00",
       "startsAt": "2026-07-07T09:00:00",
       "endsAt": "2026-07-07T17:00:00",
-      "isMultiDay": true,
-      "endDate": "2026-07-10",
+      "isMultiDay": false,
+      "endDate": null,
       "location": "Youth zone",
       "eventType": "Training",
       "eventTypes": [
@@ -2270,6 +2270,28 @@
       "speakers": "Duncan Sparrell, Ludovico Biagi, Gobi Ramasamy, Amrutha Moorthy, Megha Agarwal, Eunice Adewusi, Ng Arian Man Lok, Jose Dario Menendez Acosta, Piero Andres Aliaga Fernández, Meriem Kilani, Maria Alexandra Co Austria, Om Pradyumana Gupta, Rajesh Kumar Pathak, Leonhard Konstantin Cuzmin, Taylor Rodriguez Vance, Franck Junior Aboya Messou, Alharith Elghasri, Mark Anthony Arcayan, Andrew Vance, Himanshu Sharma, José Vila, Gregory Giuliani, Balaraman Ravindran, Julia Anna Leonardi, Gabriel Fonlladosa, Wang Jian, Pilar Orero, James Agajo, Ali Mansourian, Ian F. Akyildiz, Andrea Manara, Gyu Myoung Lee, Hoda Alkhzaimi, Ammar Muthanna, Thomas Basikolo, Phillippa Biggs, Eva Ibarrola, Michael Best, Jerry John Kponyo, Nagla Rizk, Scott Pace, Christopher S. Yoo, Hagit Messer, Celina Lee, Casper Fibaek",
       "invitationOnly": false,
       "url": null
+    },
+    {
+      "id": "90429",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-08",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-08T09:00:00",
+      "endsAt": "2026-07-08T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-3/"
     },
     {
       "id": "66051",
@@ -4646,6 +4668,28 @@
       "url": "https://aiforgood.itu.int/event/girls-in-ict-day-at-ai-for-good-inspiring-the-next-generation-in-ai-and-stem/"
     },
     {
+      "id": "90434",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-09",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-09T09:00:00",
+      "endsAt": "2026-07-09T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-4/"
+    },
+    {
       "id": "66052",
       "title": "Learn to speak AI",
       "date": "2026-07-09",
@@ -6698,6 +6742,28 @@
       "speakers": "Weimin Zhang, Marija Jankovic, Ritu Ranjan Mittar, Denis Andreev, Boris Wrubel, Mohammad Hammoudeh, Giulio Maggiore, Andrey Koucheryavy, Alexey Borodin, Huifen Wang, Sebastian Hallensleben, Anna Abramova, Artem Volkov",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-benchmarking-and-ai-powered-testing/"
+    },
+    {
+      "id": "90437",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-10",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-10T09:00:00",
+      "endsAt": "2026-07-10T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-5/"
     },
     {
       "id": "66068",
