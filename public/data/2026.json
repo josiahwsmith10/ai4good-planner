@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-09T15:35:32.237Z",
+    "fetchedAt": "2026-07-09T20:06:05.802Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 355,
+    "eventCount": 356,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -3240,7 +3240,7 @@
         "Panel"
       ],
       "topics": [],
-      "speakers": "Pren-Tsilya Boa-Guehe, Irene Kaggwa, H.E. Mr. William Kabogo Gitau, Guillem Martínez Roura, Kseniia Fontaine",
+      "speakers": "Pren-Tsilya Boa-Guehe, Irene Kaggwa, H.E. Mr. William Kabogo Gitau, Guillem Martínez Roura, Adeleh Mojtahed",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/building-ai-and-robotics-education-projects-in-africa/"
     },
@@ -6424,6 +6424,24 @@
       "url": "https://aiforgood.itu.int/event/dont-die-with-bryan-johnson/"
     },
     {
+      "id": "90341",
+      "title": "IEEE Reception cocktail",
+      "date": "2026-07-09",
+      "startTime": "17:15",
+      "endTime": "18:15",
+      "startsAt": "2026-07-09T17:15:00",
+      "endsAt": "2026-07-09T18:15:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Room V",
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [],
+      "speakers": null,
+      "invitationOnly": true,
+      "url": "https://aiforgood.itu.int/event/ieee-reception-cocktail/"
+    },
+    {
       "id": "62685",
       "title": "From silos to systems: Accelerating QuantumAI and advanced computing for good",
       "date": "2026-07-09",
@@ -6741,7 +6759,7 @@
         "Training"
       ],
       "topics": [],
-      "speakers": null,
+      "speakers": "Emma Staves",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/the-ai-safety-developer-challenge/"
     },
