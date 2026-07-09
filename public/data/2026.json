@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-08T19:56:49.645Z",
+    "fetchedAt": "2026-07-09T07:56:05.169Z",
     "timezone": "Europe/Zurich",
     "eventCount": 355,
     "schemaVersion": 1,
@@ -339,7 +339,7 @@
       "topics": [
         "Robotics for Good"
       ],
-      "speakers": "Andinet International School Steam Club, Bug Algorithm, David Kaunda NSSS, Doudou Exploration Team, Easy Win, Electronics ‎, GIGABYTE ‎, Individual Robotic Team, Inventika 3 Ways of SVR, L’Escouade Ndam, LeoneBot ‎, Mali programer, MinaBot ‎, Nendo LB, Neo Genesis, Plastal-Bot Builders, Raspberry Vikings, Robo Strikers, ROBO-KIDZ ‎, Roborise ‎, RoboWolves ‎, SA Junior Team, SA Senior Team, Samdech Hun Robotic, SiraBot ‎, SON ‎, Soofia robotronics, St. Edwards, Star Force, Team Heyansh, The Ambitious Avengers, The Spartans, Upskill Academy Robotics Club, WPS (World Problem Solvers), Windsor Wolves, Cyril Monette, IBSA ‎, Nusrat Robotics Team, Skylab Robotics, KijaniNova ‎, South Sudan Robotics Team (Junior), South Sudan Robotics Team (Senior), Spark ‎, Bright Stars, Astha Gupta, chaBots Destroy, DEERBOT ‎, Speed (驰骋), Green Force, RG team, B-weh Trailblazers, Klone ‎, HMD ‎, KCB Pirates, Peak Schools Ntinda, Mission Possible, CYB3R h@CK3RS, SAINT RAPTORS, Control Boys, Jangla ‎, J-Bots ‎, Team MGIS, Team Tech Titan, Darak ‎, EE-Tech Academy, Everest Tech Thunder, Gorkhali Tech Warriors, UmfsTech, OPEN_MIND, Baichen Luo, Max Schmitz Foriest, Seyed Hesam Salehpour, Vedant Nair, Sujay John K, Robo-TD, Andreas Werner, Bilal Choulli",
+      "speakers": "Andinet International School Steam Club, Bug Algorithm, David Kaunda NSSS, Doudou Exploration Team, Easy Win, Electronics ‎, GIGABYTE ‎, Individual Robotic Team, Inventika 3 Ways of SVR, L’Escouade Ndam, LeoneBot ‎, Mali programer, MinaBot ‎, Nendo LB, Neo Genesis, Plastal-Bot Builders, Raspberry Vikings, Robo Strikers, ROBO-KIDZ ‎, Roborise ‎, RoboWolves ‎, SA Junior Team, SA Senior Team, Samdech Hun Robotic, SiraBot ‎, SON ‎, Soofia robotronics, St. Edwards, Star Force, Team Heyansh, The Ambitious Avengers, The Spartans, Upskill Academy Robotics Club, WPS (World Problem Solvers), Windsor Wolves, Cyril Monette, IBSA ‎, Nusrat Robotics Team, Skylab Robotics, KijaniNova ‎, South Sudan Robotics Team (Junior), South Sudan Robotics Team (Senior), Spark ‎, Bright Stars, Astha Gupta, chaBots Destroy, DEERBOT ‎, Speed (驰骋), Green Force, RG team, B-weh Trailblazers, Klone ‎, HMD ‎, KCB Pirates, Peak Schools Ntinda, Mission Possible, CYB3R h@CK3RS, SAINT RAPTORS, Control Boys, Jangla ‎, J-Bots ‎, Team MGIS, Team Tech Titan, Darak ‎, EE-Tech Academy, Everest Tech Thunder, Gorkhali Tech Warriors, UmfsTech, OPEN_MIND, Baichen Luo, Max Schmitz Foriest, Vedant Nair, Sujay John K, Robo-TD, Andreas Werner, Bilal Choulli",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/robotics-for-good-youth-challenge-grand-finale-2026/"
     },
@@ -4619,8 +4619,8 @@
       "topics": [
         "AI & the future of work"
       ],
-      "speakers": "Rahul Dogra, Bart Willemsen, Anna Carlsson, Rathan Kinhal, Timothy Grosser, Catty Bennet Sattler, Khuloud Odeh, Seamus Clancy",
-      "invitationOnly": false,
+      "speakers": "Seamus Clancy, Rahul Dogra, Bart Willemsen, Anna Carlsson, Rathan Kinhal, Timothy Grosser, Catty Bennet Sattler, Khuloud Odeh",
+      "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/ai-for-human-resources-practical-applications-across-the-hr-lifecycle/"
     },
     {
@@ -6789,7 +6789,7 @@
     },
     {
       "id": "73917",
-      "title": "555n: From personal computer to personal construct",
+      "title": "The new PC: From Personal Computer to Personal Construct",
       "date": "2026-07-10",
       "startTime": "10:00",
       "endTime": "10:30",
@@ -6803,7 +6803,7 @@
       "topics": [],
       "speakers": "555n, Gadi Sassoon",
       "invitationOnly": false,
-      "url": "https://aiforgood.itu.int/event/555n-from-personal-computer-to-personal-construct/"
+      "url": "https://aiforgood.itu.int/event/the-new-pc-from-personal-computer-to-personal-construct/"
     },
     {
       "id": "55227",
@@ -6966,7 +6966,7 @@
       "topics": [
         "AI infrastructure"
       ],
-      "speakers": "Milos Maricic, Anja Gengo, Kamila Ciok, Walid Mathlouthi, Sasha Rubel",
+      "speakers": "Cosmas Luckyson Zavazava, Sasha Rubel, Walid Mathlouthi, Milos Maricic, Kamila Ciok, Anja Gengo",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-digital-infrastructure-advancing-connectivity-and-closing-the-digital-divide/"
     },
