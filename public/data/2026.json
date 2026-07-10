@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-10T04:17:09.165Z",
+    "fetchedAt": "2026-07-10T07:56:24.615Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 356,
+    "eventCount": 361,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -102,7 +102,7 @@
       "topics": [
         "Impact & innovation"
       ],
-      "speakers": "Stéphanie Kioutsoukis, Suzy Madigan, Sarah Barnbrook, Adriana Pricope, Tomas Petrek, Lu Zhang",
+      "speakers": "Stéphanie Kioutsoukis, Suzy Madigan, Sarah Barnbrook, Tomas Petrek, Lu Zhang",
       "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/startup-accelerator-programme-2026-day1/"
     },
@@ -287,8 +287,8 @@
       "endTime": "17:00",
       "startsAt": "2026-07-07T09:00:00",
       "endsAt": "2026-07-07T17:00:00",
-      "isMultiDay": true,
-      "endDate": "2026-07-10",
+      "isMultiDay": false,
+      "endDate": null,
       "location": "Youth zone",
       "eventType": "Training",
       "eventTypes": [
@@ -373,8 +373,8 @@
       "endTime": "17:00",
       "startsAt": "2026-07-07T09:00:00",
       "endsAt": "2026-07-07T17:00:00",
-      "isMultiDay": true,
-      "endDate": "2026-07-10",
+      "isMultiDay": false,
+      "endDate": null,
       "location": "Youth zone",
       "eventType": "Training",
       "eventTypes": [
@@ -2272,6 +2272,28 @@
       "url": null
     },
     {
+      "id": "90429",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-08",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-08T09:00:00",
+      "endsAt": "2026-07-08T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-3/"
+    },
+    {
       "id": "66051",
       "title": "Learn to speak AI",
       "date": "2026-07-08",
@@ -2336,6 +2358,29 @@
       "speakers": null,
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/smart-prototypes-for-tomorrow-futurepitch-ai-2/"
+    },
+    {
+      "id": "90452",
+      "title": "Thymio AI exploration: Hands-on robotics and machine learning",
+      "date": "2026-07-08",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-08T09:00:00",
+      "endsAt": "2026-07-08T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Impact & innovation",
+        "Robotics for Good"
+      ],
+      "speakers": null,
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/thymio-ai-exploration-hands-on-robotics-and-machine-learning-2/"
     },
     {
       "id": "73045",
@@ -4646,6 +4691,28 @@
       "url": "https://aiforgood.itu.int/event/girls-in-ict-day-at-ai-for-good-inspiring-the-next-generation-in-ai-and-stem/"
     },
     {
+      "id": "90434",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-09",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-09T09:00:00",
+      "endsAt": "2026-07-09T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-4/"
+    },
+    {
       "id": "66052",
       "title": "Learn to speak AI",
       "date": "2026-07-09",
@@ -4688,6 +4755,29 @@
       "speakers": null,
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/smart-prototypes-for-tomorrow-futurepitch-ai-3/"
+    },
+    {
+      "id": "90454",
+      "title": "Thymio AI exploration: Hands-on robotics and machine learning",
+      "date": "2026-07-09",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-09T09:00:00",
+      "endsAt": "2026-07-09T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Impact & innovation",
+        "Robotics for Good"
+      ],
+      "speakers": null,
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/thymio-ai-exploration-hands-on-robotics-and-machine-learning-3/"
     },
     {
       "id": "71057",
@@ -6561,7 +6651,7 @@
         "Training"
       ],
       "topics": [],
-      "speakers": "Amelle Benabdellaziz, Rafah Knight, Andrea Tribelhorn, Alexandra Hirzel, Guillem Martínez Roura, Carlo Tortora Brayda di Belvedere",
+      "speakers": "Amelle Benabdellaziz, Rafah Knight, Andrea Tribelhorn, Alexandra Hirzel, Guillem Martínez Roura, Carlo Tortora Brayda di Belvedere, Adriana Pricope",
       "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/startup-accelerator-programme-2026-day4/"
     },
@@ -6700,6 +6790,28 @@
       "url": "https://aiforgood.itu.int/event/ai-benchmarking-and-ai-powered-testing/"
     },
     {
+      "id": "90437",
+      "title": "Hands-on AI: How does AI really work?",
+      "date": "2026-07-10",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-10T09:00:00",
+      "endsAt": "2026-07-10T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Frontier technologies"
+      ],
+      "speakers": "EPFL",
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/hands-on-ai-how-does-ai-really-work-5/"
+    },
+    {
       "id": "66068",
       "title": "Learn to speak AI",
       "date": "2026-07-10",
@@ -6762,6 +6874,29 @@
       "speakers": "Emma Staves",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/the-ai-safety-developer-challenge/"
+    },
+    {
+      "id": "90456",
+      "title": "Thymio AI exploration: Hands-on robotics and machine learning",
+      "date": "2026-07-10",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "startsAt": "2026-07-10T09:00:00",
+      "endsAt": "2026-07-10T17:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": "Youth zone",
+      "eventType": "Training",
+      "eventTypes": [
+        "Training"
+      ],
+      "topics": [
+        "Impact & innovation",
+        "Robotics for Good"
+      ],
+      "speakers": null,
+      "invitationOnly": false,
+      "url": "https://aiforgood.itu.int/event/thymio-ai-exploration-hands-on-robotics-and-machine-learning-4/"
     },
     {
       "id": "71071",
@@ -6984,7 +7119,7 @@
       "topics": [
         "AI infrastructure"
       ],
-      "speakers": "Cosmas Luckyson Zavazava, Sasha Rubel, Walid Mathlouthi, Milos Maricic, Kamila Ciok, Anja Gengo",
+      "speakers": "Cosmas Luckyson Zavazava, Sasha Rubel, Walid Mathlouthi, Milos Maricic, Anja Gengo",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/ai-for-digital-infrastructure-advancing-connectivity-and-closing-the-digital-divide/"
     },
@@ -7372,26 +7507,6 @@
       "url": "https://aiforgood.itu.int/event/ai-media-and-the-information-integrity-challenge/"
     },
     {
-      "id": "88092",
-      "title": "How AI is accelerating robotic space exploration",
-      "date": "2026-07-10",
-      "startTime": "14:00",
-      "endTime": "14:15",
-      "startsAt": "2026-07-10T14:00:00",
-      "endsAt": "2026-07-10T14:15:00",
-      "isMultiDay": false,
-      "endDate": null,
-      "location": "Solutions stage",
-      "eventType": "Keynote",
-      "eventTypes": [
-        "Keynote"
-      ],
-      "topics": [],
-      "speakers": "Vandi Verma, Vandi Verma",
-      "invitationOnly": false,
-      "url": null
-    },
-    {
       "id": "64672",
       "title": "Robotics for Good Youth Challenge Grand Finale 2026 closing ceremony",
       "date": "2026-07-10",
@@ -7429,7 +7544,7 @@
       "topics": [
         "AI for health"
       ],
-      "speakers": null,
+      "speakers": "Sami Milouchi",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/najda-tn-an-ai-powered-platform-transforming-heart-attack-care/"
     },
@@ -7473,7 +7588,7 @@
       "topics": [
         "AI for health"
       ],
-      "speakers": "Ashish Tripathi, Habiba Mizouni, Alireza Haghighi",
+      "speakers": "Habiba Mizouni, Ashish Tripathi, Alireza Haghighi, Alain Labrique",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/the-future-of-health-ai-genomics-and-the-next-era-of-medicine/"
     },
