@@ -3,9 +3,9 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-10T11:20:38.752Z",
+    "fetchedAt": "2026-07-10T15:03:48.436Z",
     "timezone": "Europe/Zurich",
-    "eventCount": 361,
+    "eventCount": 362,
     "schemaVersion": 1,
     "days": [
       "2026-07-07",
@@ -6654,6 +6654,24 @@
       "speakers": "Amelle Benabdellaziz, Rafah Knight, Andrea Tribelhorn, Alexandra Hirzel, Guillem Martínez Roura, Carlo Tortora Brayda di Belvedere, Adriana Pricope",
       "invitationOnly": true,
       "url": "https://aiforgood.itu.int/event/startup-accelerator-programme-2026-day4/"
+    },
+    {
+      "id": "90858",
+      "title": "AI for Good Ambassadors’ academy: Beneficial AI in action",
+      "date": "2026-07-10",
+      "startTime": "09:00",
+      "endTime": "10:00",
+      "startsAt": "2026-07-10T09:00:00",
+      "endsAt": "2026-07-10T10:00:00",
+      "isMultiDay": false,
+      "endDate": null,
+      "location": null,
+      "eventType": "",
+      "eventTypes": [],
+      "topics": [],
+      "speakers": "Jean Hoey, Shaig Abduragimov, Olga Nowicka",
+      "invitationOnly": true,
+      "url": "https://aiforgood.itu.int/event/ai-for-good-ambassadors-academy-beneficial-ai-in-action/"
     },
     {
       "id": "75128",
