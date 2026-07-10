@@ -3,7 +3,7 @@
     "year": 2026,
     "eventName": "AI for Good Global Summit 2026",
     "sourceUrl": "https://aiforgood.itu.int/summit26/programme/",
-    "fetchedAt": "2026-07-10T07:56:24.615Z",
+    "fetchedAt": "2026-07-10T11:20:38.752Z",
     "timezone": "Europe/Zurich",
     "eventCount": 361,
     "schemaVersion": 1,
@@ -7161,7 +7161,7 @@
       "topics": [
         "AI infrastructure"
       ],
-      "speakers": "Calista Redmond, Peter Danenberg, Katharina Frey, Bilel Jamoussi, H.E. Ms. Lavina Ramkissoon",
+      "speakers": "Calista Redmond, Katharina Frey, Bilel Jamoussi, Nkundwe Mwasaga",
       "invitationOnly": false,
       "url": "https://aiforgood.itu.int/event/bridging-the-ai-infrastructure-divide/"
     },
